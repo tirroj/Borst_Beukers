@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="188.0" y="1124.0">AboutBox</node>
+    <node x="0.0" y="1218.0">netscape</node>
+    <node x="0.0" y="874.0">SlideViewerComponent</node>
+    <node x="723.0" y="211.0">TextItem</node>
+    <node x="451.0" y="492.0">Accessor</node>
+    <node x="571.0" y="874.0">SlideViewerFrame</node>
+    <node x="896.0" y="1124.0">groovyjarjarasm</node>
+    <node x="0.0" y="492.0">Slide</node>
+    <node x="829.0" y="492.0">Style</node>
+    <node x="569.0" y="714.0">DemoPresentation</node>
+    <node x="962.0" y="874.0">KeyController</node>
+    <node x="364.0" y="1218.0">javafx</node>
+    <node x="322.0" y="222.0">BitmapItem</node>
+    <node x="0.0" y="1124.0">JabberPoint</node>
+    <node x="532.0" y="1218.0">oracle</node>
+    <node x="286.0" y="874.0">MenuController</node>
+    <node x="0.0" y="0.0">Presentation</node>
+    <node x="182.0" y="1218.0">META-INF</node>
+    <node x="522.5" y="0.0">SlideItem</node>
+    <node x="332.0" y="703.0">XMLAccessor</node>
+    <node x="371.0" y="1124.0">groovyjarjarcommonscli</node>
+    <node x="651.0" y="1124.0">groovyjarjarantlr</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="BitmapItem" target="SlideItem">
+      <point x="0.0" y="-102.5" />
+      <point x="512.5" y="186.0" />
+      <point x="617.75" y="186.0" />
+      <point x="-95.25" y="80.5" />
+    </edge>
+    <edge source="TextItem" target="SlideItem">
+      <point x="0.0" y="-113.5" />
+      <point x="913.5" y="186.0" />
+      <point x="808.25" y="186.0" />
+      <point x="95.25" y="80.5" />
+    </edge>
+    <edge source="DemoPresentation" target="Accessor">
+      <point x="0.0" y="-35.5" />
+      <point x="676.5" y="678.0" />
+      <point x="612.25" y="678.0" />
+      <point x="53.75" y="80.5" />
+    </edge>
+    <edge source="XMLAccessor" target="Accessor">
+      <point x="0.0" y="-46.5" />
+      <point x="440.5" y="678.0" />
+      <point x="504.75" y="678.0" />
+      <point x="-53.75" y="80.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.839171974522293" x="342.0" y="88.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
