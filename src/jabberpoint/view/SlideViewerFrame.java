@@ -1,8 +1,8 @@
-package view;
+package jabberpoint.view;
 
-import presentation.Presentation;
-import view.controller.KeyController;
-import view.controller.MenuController;
+import jabberpoint.presentation.Presentation;
+import jabberpoint.view.controller.KeyController;
+import jabberpoint.view.controller.MenuController;
 
 import java.awt.Dimension;
 import java.awt.event.WindowEvent;

@@ -1,9 +1,9 @@
-package demo;
+package jabberpoint.demo;
 
-import file.Accessor;
-import presentation.BitmapItem;
-import presentation.Presentation;
-import presentation.Slide;
+import jabberpoint.file.Accessor;
+import jabberpoint.presentation.BitmapItem;
+import jabberpoint.presentation.Presentation;
+import jabberpoint.presentation.Slide;
 
 /** Een ingebouwde demo-presentatie
  *

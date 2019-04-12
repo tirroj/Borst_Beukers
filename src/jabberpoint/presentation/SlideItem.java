@@ -1,4 +1,6 @@
-package presentation;
+package jabberpoint.presentation;
+
+import jabberpoint.presentation.style.Style;
 
 import java.awt.Rectangle;
 import java.awt.Graphics;

@@ -1,9 +1,9 @@
-package view.controller;
+package jabberpoint.view.controller;
 
-import file.Accessor;
-import file.XMLAccessor;
-import presentation.Presentation;
-import view.AboutBox;
+import jabberpoint.file.Accessor;
+import jabberpoint.file.XMLAccessor;
+import jabberpoint.presentation.Presentation;
+import jabberpoint.view.AboutBox;
 
 import java.awt.MenuBar;
 import java.awt.Frame;
@@ -77,7 +77,7 @@ public class MenuController extends MenuBar {
       }
     });
     add(fileMenu);
-    Menu viewMenu = new Menu("view");
+    Menu viewMenu = new Menu("View");
     viewMenu.add(menuItem = mkMenuItem("Next"));
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {

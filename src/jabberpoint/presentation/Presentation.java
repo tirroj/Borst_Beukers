@@ -1,6 +1,6 @@
-package presentation;
+package jabberpoint.presentation;
 
-import view.SlideViewerComponent;
+import jabberpoint.view.SlideViewerComponent;
 
 import java.util.ArrayList;
 

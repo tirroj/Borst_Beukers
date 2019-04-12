@@ -1,6 +1,6 @@
-package view.controller;
+package jabberpoint.view.controller;
 
-import presentation.Presentation;
+import jabberpoint.presentation.Presentation;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;

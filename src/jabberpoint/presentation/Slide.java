@@ -1,4 +1,6 @@
-package presentation;
+package jabberpoint.presentation;
+
+import jabberpoint.presentation.style.Style;
 
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -43,12 +45,12 @@ public class Slide {
     title = newTitle;
   }
 
-// Maak een presentation.TextItem van String, en voeg het presentation.TextItem toe
+// Maak een TextItem van String, en voeg het TextItem toe
   public void append(int level, String message) {
     append(new TextItem(level, message));
   }
 
-// geef het betreffende presentation.SlideItem
+// geef het betreffende SlideItem
   public SlideItem getSlideItem(int number) {
     return (SlideItem)items.elementAt(number);
   }
@@ -58,7 +60,7 @@ public class Slide {
     return items;
   }
 
-// geef de afmeting van de presentation.Slide
+// geef de afmeting van de Slide
   public int getSize() {
     return items.size();
   }

@@ -1,4 +1,4 @@
-package presentation;
+package jabberpoint.presentation.style;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -20,6 +20,8 @@ import java.awt.Font;
 
 public class Style {
   private static Style[] styles; // de styles
+
+
   int indent;
   Color color;
   Font font;
@@ -55,5 +57,25 @@ public class Style {
 
   public Font getFont(float scale) {
     return font.deriveFont(fontSize * scale);
+  }
+
+  public int getIndent() {
+    return indent;
+  }
+
+  public Color getColor() {
+    return color;
+  }
+
+  public Font getFont() {
+    return font;
+  }
+
+  public int getFontSize() {
+    return fontSize;
+  }
+
+  public int getLeading() {
+    return leading;
   }
 }
