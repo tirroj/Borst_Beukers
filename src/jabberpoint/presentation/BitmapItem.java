@@ -28,7 +28,11 @@ public class BitmapItem extends SlideItem {
   private BufferedImage bufferedImage;
   private String imageName;
 
-// level staat voor het item-level; name voor de naam van het bestand met het plaatje
+  public BufferedImage getBufferedImage() {
+    return bufferedImage;
+  }
+
+  // level staat voor het item-level; name voor de naam van het bestand met het plaatje
   public BitmapItem(int level, String name) {
     super(level);
     imageName = name;
@@ -50,22 +54,7 @@ public class BitmapItem extends SlideItem {
     return imageName;
   }
 
-// geef de bounding box van het plaatje
-  public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
-    return new Rectangle((int) (myStyle.getIndent() * scale), 0,
-	(int) (bufferedImage.getWidth(observer) * scale),
-	((int) (myStyle.getLeading() * scale)) + (int) (bufferedImage.getHeight(observer) * scale));
-  }
-
-// teken het plaatje
-  public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
-    int width = x + (int) (myStyle.getIndent() * scale);
-    int height = y + (int) (myStyle.getLeading() * scale);
-    g.drawImage(bufferedImage, width, height,(int) (bufferedImage.getWidth(observer)*scale),
-                (int) (bufferedImage.getHeight(observer)*scale), observer);
-  }
-
   public String toString() {
-    return "presentation.BitmapItem[" + getLevel() + "," + imageName + "]";
+    return "BitmapItem[" + getLevel() + "," + imageName + "]";
   }
 }

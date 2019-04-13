@@ -2,6 +2,7 @@ package jabberpoint.view;
 
 import jabberpoint.presentation.Presentation;
 import jabberpoint.presentation.Slide;
+import jabberpoint.view.drawer.DrawerFactory;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -58,10 +59,10 @@ public class SlideViewerComponent extends JComponent {
     }
     g.setFont(labelFont);
     g.setColor(Color.black);
-    g.drawString("presentation.Slide " + (1+presentation.getSlideNumber()) + " of " +
+    g.drawString("Slide " + (1+presentation.getSlideNumber()) + " of " +
                  presentation.getSize(), 600, 30);
     Rectangle area = new Rectangle(0, 20, getWidth(), (getHeight()-20));
-    slide.draw(g, area, this);
+    DrawerFactory.getDrawer(slide).draw(g, area, this);
   }
 
 }
