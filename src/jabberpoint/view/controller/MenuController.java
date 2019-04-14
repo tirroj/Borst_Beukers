@@ -31,6 +31,7 @@ public class MenuController extends MenuBar {
 	private static final long serialVersionUID = 227L;
   private Frame parent; // het frame, alleen gebruikt als ouder voor de Dialogs
   private Presentation presentation; // wat gecontrolled wordt is de presentatie
+  private DrawController drawController; //tekenmodus
 
   public MenuController(Frame frame, Presentation pres) {
     parent = frame;
@@ -99,6 +100,24 @@ public class MenuController extends MenuBar {
       }
     });
     add(viewMenu);
+
+    Menu drawMenu = new Menu("Draw");
+    drawMenu.add(menuItem = mkMenuItem("Start drawing"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        drawController = new DrawController(presentation.startTekenen());
+        parent.addMouseListener(drawController);
+      }
+    });
+    drawMenu.add(menuItem = mkMenuItem("Stop drawing"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        parent.removeMouseListener(drawController);
+      }
+    });
+    add(drawMenu);
     Menu helpMenu = new Menu("Help");
     helpMenu.add(menuItem = mkMenuItem("About"));
     menuItem.addActionListener(new ActionListener() {

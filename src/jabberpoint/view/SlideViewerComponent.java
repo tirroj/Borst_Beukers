@@ -31,7 +31,7 @@ public class SlideViewerComponent extends JComponent {
   private Presentation presentation = null; // de presentatie
 
   public SlideViewerComponent(Presentation pres) {
-    setBackground(Color.white); // dit zou ooit van presentation.Style afkomstig kunnen zijn
+    setBackground(Color.white); // dit zou ooit van Style afkomstig kunnen zijn
     presentation = pres;
     labelFont = new Font("Dialog", Font.BOLD, 10);
   }
