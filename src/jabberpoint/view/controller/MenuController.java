@@ -106,7 +106,7 @@ public class MenuController extends MenuBar {
     menuItem.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        drawController = new DrawController(presentation.startTekenen());
+        drawController = new DrawController(presentation.startTekenen(), presentation);
         parent.addMouseListener(drawController);
       }
     });

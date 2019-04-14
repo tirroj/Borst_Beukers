@@ -30,7 +30,7 @@ public class DrawItemDrawer implements Drawer {
 
 
         for (Line line :drawItem.getLines()) {
-            graphic2D.drawLine(line.getStartX(), line.getStartY(), line.getEndX(), line.getEndY());
+            graphic2D.drawLine(line.getStartX(), line.getStartY() , line.getEndX(), line.getEndY());
         }
 
     }

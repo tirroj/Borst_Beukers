@@ -109,6 +109,10 @@ public class Presentation {
     return getCurrentSlide().startTekenen();
   }
 
+  public void update(){
+      slideViewComponent.update(this, getCurrentSlide());
+  }
+
   public void exit(int n) {
     System.exit(n);
   }
