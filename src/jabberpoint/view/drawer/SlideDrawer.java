@@ -20,7 +20,7 @@ public class SlideDrawer {
     public void draw(Graphics g, Rectangle area, ImageObserver view) {
         float scale = getScale(area);
         int y = area.y;
-// De titel wordt apart behandeld
+        // De titel wordt apart behandeld
         SlideItem slideItem = new TextItem(0, slide.getTitle());
         Style style = Style.getStyle(slideItem.getLevel());
         Drawer drawer = getDrawer(slideItem);

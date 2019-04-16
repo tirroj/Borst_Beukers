@@ -1,9 +1,6 @@
 package jabberpoint.view.drawer;
 
-import jabberpoint.presentation.BitmapItem;
-import jabberpoint.presentation.Slide;
-import jabberpoint.presentation.SlideItem;
-import jabberpoint.presentation.TextItem;
+import jabberpoint.presentation.*;
 
 public class DrawerFactory {
 
@@ -13,6 +10,9 @@ public class DrawerFactory {
         }
         if(slideItem instanceof BitmapItem){
             return new BitmapItemDrawer((BitmapItem)slideItem);
+        }
+        if(slideItem instanceof DrawItem){
+            return new DrawItemDrawer((DrawItem)slideItem);
         }
         //throw new Exception();
         return null;

@@ -25,13 +25,13 @@ import javax.swing.JComponent;
  */
 
 public class SlideViewerComponent extends JComponent {
-	private static final long serialVersionUID = 227L;
+  private static final long serialVersionUID = 227L;
   private Slide slide; // de huidige slide
   private Font labelFont = null; // het font voor labels
   private Presentation presentation = null; // de presentatie
 
   public SlideViewerComponent(Presentation pres) {
-    setBackground(Color.white); // dit zou ooit van presentation.Style afkomstig kunnen zijn
+    setBackground(Color.white); // dit zou ooit van Style afkomstig kunnen zijn
     presentation = pres;
     labelFont = new Font("Dialog", Font.BOLD, 10);
   }

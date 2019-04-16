@@ -105,6 +105,14 @@ public class Presentation {
     return getSlide(currentSlideNumber);
   }
 
+  public DrawItem startTekenen(){
+    return getCurrentSlide().startTekenen();
+  }
+
+  public void update(){
+      slideViewComponent.update(this, getCurrentSlide());
+  }
+
   public void exit(int n) {
     System.exit(n);
   }

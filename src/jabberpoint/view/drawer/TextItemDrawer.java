@@ -50,6 +50,13 @@ public class TextItemDrawer implements Drawer{
         List layouts = getLayouts(g, myStyle, scale);
         Point pen = new Point(x + (int)(myStyle.getIndent() * scale), y + (int) (myStyle.getLeading() * scale));
         Graphics2D g2d = (Graphics2D)g;
+
+        //Enable antialiasing
+        RenderingHints rh = new RenderingHints(
+                RenderingHints.KEY_TEXT_ANTIALIASING,
+                RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2d.setRenderingHints(rh);
+
         g2d.setColor(myStyle.getColor());
         Iterator it = layouts.iterator();
         while (it.hasNext()) {
