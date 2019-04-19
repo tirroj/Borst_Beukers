@@ -101,6 +101,16 @@ public class MenuController extends MenuBar {
     });
     add(viewMenu);
 
+    Menu colorMenu = new Menu("Color");
+    colorMenu.add(menuItem = mkMenuItem("Red"));
+    colorMenu.add(menuItem = mkMenuItem("Yellow"));
+    colorMenu.add(menuItem = mkMenuItem("Blue"));
+
+    Menu lineMenu = new Menu("Line");
+    lineMenu.add(menuItem = mkMenuItem("1px"));
+    lineMenu.add(menuItem = mkMenuItem("2px"));
+    lineMenu.add(menuItem = mkMenuItem("3px"));
+
     Menu drawMenu = new Menu("Draw");
     drawMenu.add(menuItem = mkMenuItem("Start drawing"));
     menuItem.addActionListener(new ActionListener() {
@@ -118,6 +128,8 @@ public class MenuController extends MenuBar {
         parent.removeMouseListener(drawController);
       }
     });
+    drawMenu.add(colorMenu);
+    drawMenu.add(lineMenu);
     add(drawMenu);
     Menu helpMenu = new Menu("Help");
     helpMenu.add(menuItem = mkMenuItem("About"));
