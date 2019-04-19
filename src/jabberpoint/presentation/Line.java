@@ -1,18 +1,21 @@
 package jabberpoint.presentation;
 
+import jabberpoint.presentation.style.LineStyle;
+
 public class Line {
 
     private int startX ;
     private int startY;
     private int endX;
     private int endY;
-    private String style;
+    private LineStyle style;
 
-    public Line(int startX, int startY, int endX, int endY) {
+    public Line(int startX, int startY, int endX, int endY, LineStyle style) {
         this.startX = startX;
         this.startY = startY;
         this.endX = endX;
         this.endY = endY;
+        this.style = style;
     }
 
     public int getStartX() {
@@ -47,11 +50,11 @@ public class Line {
         this.endY = endY;
     }
 
-    public String getStyle() {
+    public LineStyle getStyle() {
         return style;
     }
 
-    public void setStyle(String style) {
+    public void setStyle(LineStyle style) {
         this.style = style;
     }
 }

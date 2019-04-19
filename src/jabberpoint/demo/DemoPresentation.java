@@ -26,8 +26,6 @@ public class DemoPresentation extends Accessor {
     slide.append(3, "Volgende slide: PgDn of Enter");
     slide.append(3, "Vorige slide: PgUp of up-arrow");
     slide.append(3, "Stoppen: q or Q");
-    // demo drawitem
-    slide.append(getDemoDrawItem());
     presentation.append(slide);
 
     slide = new Slide();
@@ -51,13 +49,6 @@ public class DemoPresentation extends Accessor {
     presentation.append(slide);
   }
 
-  private DrawItem getDemoDrawItem() {
-    // Drawitem
-    DrawItem drawItem = new DrawItem();
-    drawItem.addLine(new Line(0,0,100,100));
-    drawItem.addLine(new Line(100,0,0,100));
-    return drawItem;
-  }
 
   public void saveFile(Presentation presentation, String unusedFilename) {
     throw new IllegalStateException("Save As->Demo! aangeroepen");

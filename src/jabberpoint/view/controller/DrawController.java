@@ -3,7 +3,9 @@ package jabberpoint.view.controller;
 import jabberpoint.presentation.DrawItem;
 import jabberpoint.presentation.Line;
 import jabberpoint.presentation.Presentation;
+import jabberpoint.presentation.style.LineStyle;
 
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -15,12 +17,32 @@ public class DrawController implements MouseListener, MouseMotionListener {
     int startY;
     private final int OFFSET_X = 8;
     private final int OFFSET_Y = 52;
+    private Color color = Color.black;
+    private int lineSize = 0;
+
+
+
 
     public DrawController(DrawItem drawItem, Presentation presentation) {
         this.drawItem = drawItem;
         this.presentation = presentation;
     }
 
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public int getLineSize() {
+        return lineSize;
+    }
+
+    public void setLineSize(int lineSize) {
+        this.lineSize = lineSize;
+    }
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -55,7 +77,8 @@ public class DrawController implements MouseListener, MouseMotionListener {
         if(startX > 0 && startY > 0) {
             int nowX = e.getX() - OFFSET_X;
             int nowY = e.getY() - OFFSET_Y;
-            drawItem.addLine(new Line(startX, startY, nowX, nowY));
+            LineStyle lineStyle = new LineStyle(getColor(), getLineSize());
+            drawItem.addLine(new Line(startX, startY, nowX, nowY, lineStyle));
             startX = nowX;
             startY = nowY;
             presentation.update();

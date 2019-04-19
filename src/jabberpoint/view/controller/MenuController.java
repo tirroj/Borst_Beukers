@@ -5,11 +5,7 @@ import jabberpoint.file.XMLAccessor;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
 
-import java.awt.MenuBar;
-import java.awt.Frame;
-import java.awt.Menu;
-import java.awt.MenuItem;
-import java.awt.MenuShortcut;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -102,14 +98,77 @@ public class MenuController extends MenuBar {
     add(viewMenu);
 
     Menu colorMenu = new Menu("Color");
+    colorMenu.add(menuItem = mkMenuItem("Black"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setColor(Color.black);
+        }
+      }
+    });
     colorMenu.add(menuItem = mkMenuItem("Red"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setColor(Color.red);
+        }
+      }
+    });
+
     colorMenu.add(menuItem = mkMenuItem("Yellow"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setColor(Color.yellow);
+        }
+      }
+    });
+
     colorMenu.add(menuItem = mkMenuItem("Blue"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setColor(Color.blue);
+        }
+      }
+    });
+
 
     Menu lineMenu = new Menu("Line");
     lineMenu.add(menuItem = mkMenuItem("1px"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setLineSize(1);
+        }
+      }
+    });
+
     lineMenu.add(menuItem = mkMenuItem("2px"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setLineSize(2);
+        }
+      }
+    });
+
     lineMenu.add(menuItem = mkMenuItem("3px"));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        if(drawController != null) {
+          drawController.setLineSize(3);
+        }
+      }
+    });
+
 
     Menu drawMenu = new Menu("Draw");
     drawMenu.add(menuItem = mkMenuItem("Start drawing"));
@@ -126,6 +185,7 @@ public class MenuController extends MenuBar {
       @Override
       public void actionPerformed(ActionEvent e) {
         parent.removeMouseListener(drawController);
+        drawController = null;
       }
     });
     drawMenu.add(colorMenu);

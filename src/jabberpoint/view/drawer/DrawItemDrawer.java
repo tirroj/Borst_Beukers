@@ -24,10 +24,6 @@ public class DrawItemDrawer implements Drawer {
     public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver o) {
         Graphics2D graphic2D = (Graphics2D) g;
 
-        Color color = Color.black; // kleur, later uit line
-        graphic2D.setPaint(color);
-        graphic2D.setStroke(new BasicStroke(2)); // hoe dik, later uit line
-
         //Enable antialiasing
         RenderingHints rh = new RenderingHints(
                 RenderingHints.KEY_ANTIALIASING,
@@ -35,6 +31,9 @@ public class DrawItemDrawer implements Drawer {
         graphic2D.setRenderingHints(rh);
 
         for (Line line :drawItem.getLines()) {
+            graphic2D.setPaint(line.getStyle().getColor());
+            graphic2D.setStroke(new BasicStroke(line.getStyle().getLineSize())); // hoe dik, later uit line
+
             graphic2D.drawLine(line.getStartX(), line.getStartY() , line.getEndX(), line.getEndY());
         }
 
