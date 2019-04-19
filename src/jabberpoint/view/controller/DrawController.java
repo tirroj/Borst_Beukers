@@ -35,6 +35,8 @@ public class DrawController implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
+        startX = -1;
+        startY = -1;
 
     }
 
@@ -50,12 +52,14 @@ public class DrawController implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        int nowX = e.getX() - OFFSET_X;
-        int nowY = e.getY() - OFFSET_Y;
-        drawItem.addLine(new Line(startX,startY,nowX,nowY));
-        startX = nowX;
-        startY = nowY;
-        presentation.update();
+        if(startX > 0 && startY > 0) {
+            int nowX = e.getX() - OFFSET_X;
+            int nowY = e.getY() - OFFSET_Y;
+            drawItem.addLine(new Line(startX, startY, nowX, nowY));
+            startX = nowX;
+            startY = nowY;
+            presentation.update();
+        }
     }
 
     @Override
