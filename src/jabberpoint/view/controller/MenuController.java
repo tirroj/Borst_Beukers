@@ -4,6 +4,8 @@ import jabberpoint.file.Accessor;
 import jabberpoint.file.XMLAccessor;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
+import jabberpoint.colorchooser.ColorChooser;
+import jabberpoint.widthChooser.LineWidthSlider;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -24,17 +26,23 @@ import javax.swing.JOptionPane;
  * @version $Id: view.controller.MenuController.java,v 1.4 2007/07/16 Sylvia Stuurman
  */
 public class MenuController extends MenuBar {
-	private static final long serialVersionUID = 227L;
+  private static final long serialVersionUID = 227L;
   private Frame parent; // het frame, alleen gebruikt als ouder voor de Dialogs
   private Presentation presentation; // wat gecontrolled wordt is de presentatie
   private DrawController drawController; //tekenmodus
+  private ColorChooser colorChooser; //dialoog om de kleur in te stellen voor de tekenmodus
+  private LineWidthSlider lineSizeSlider; //dialoog om de dikte in te stellen voor de tekenmodus
 
   public MenuController(Frame frame, Presentation pres) {
     parent = frame;
     presentation = pres;
+    colorChooser = new ColorChooser();
+    lineSizeSlider = new LineWidthSlider();
+
     MenuItem menuItem;
     Menu fileMenu = new Menu("File");
     fileMenu.add(menuItem = mkMenuItem("Open"));
+
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
         presentation.clear();
@@ -96,106 +104,56 @@ public class MenuController extends MenuBar {
       }
     });
     add(viewMenu);
-
-    Menu colorMenu = new Menu("Color");
-    colorMenu.add(menuItem = mkMenuItem("Black"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setColor(Color.black);
-        }
-      }
-    });
-    colorMenu.add(menuItem = mkMenuItem("Red"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setColor(Color.red);
-        }
-      }
-    });
-
-    colorMenu.add(menuItem = mkMenuItem("Yellow"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setColor(Color.yellow);
-        }
-      }
-    });
-
-    colorMenu.add(menuItem = mkMenuItem("Blue"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setColor(Color.blue);
-        }
-      }
-    });
-
-
-    Menu lineMenu = new Menu("Line");
-    lineMenu.add(menuItem = mkMenuItem("1px"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setLineSize(1);
-        }
-      }
-    });
-
-    lineMenu.add(menuItem = mkMenuItem("2px"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setLineSize(2);
-        }
-      }
-    });
-
-    lineMenu.add(menuItem = mkMenuItem("3px"));
-    menuItem.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent e) {
-        if(drawController != null) {
-          drawController.setLineSize(3);
-        }
-      }
-    });
-
-
     Menu drawMenu = new Menu("Draw");
     drawMenu.add(menuItem = mkMenuItem("Start drawing"));
+    menuItem.setShortcut(new MenuShortcut('D', false));
     menuItem.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        drawController = new DrawController(presentation.startTekenen(), presentation);
+        drawController = new DrawController(presentation.startTekenen(), presentation, colorChooser.getColor(), lineSizeSlider.getWidth());
         parent.addMouseListener(drawController);
         parent.addMouseMotionListener(drawController);
       }
     });
     drawMenu.add(menuItem = mkMenuItem("Stop drawing"));
+    menuItem.setShortcut(new MenuShortcut('X', false));
     menuItem.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
         parent.removeMouseListener(drawController);
+        parent.removeMouseMotionListener(drawController);
         drawController = null;
       }
     });
-    drawMenu.add(colorMenu);
-    drawMenu.add(lineMenu);
+    drawMenu.add(menuItem = mkMenuItem("Select line width"));
+    menuItem.setShortcut(new MenuShortcut('L', false));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        lineSizeSlider.showDialog();
+        if(drawController != null) {
+          drawController.setLineSize(lineSizeSlider.getWidth());
+        }
+      }
+    });
+    drawMenu.add(menuItem = mkMenuItem("Select color"));
+    menuItem.setShortcut(new MenuShortcut('C', false));
+    menuItem.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        colorChooser.showDialog();
+        if(drawController != null) {
+          drawController.setColor(colorChooser.getColor());
+        }
+      }
+    });
+
     add(drawMenu);
     Menu helpMenu = new Menu("Help");
     helpMenu.add(menuItem = mkMenuItem("About"));
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
-	AboutBox.show(parent);
+	    AboutBox.show(parent);
       }
     });
     setHelpMenu(helpMenu);		// nodig for portability (Motif, etc.).

@@ -71,6 +71,4 @@ public class Slide {
     items.add(draw);
     return draw;
   }
-
-
 }

@@ -21,11 +21,11 @@ public class DrawController implements MouseListener, MouseMotionListener {
     private int lineSize = 0;
 
 
-
-
-    public DrawController(DrawItem drawItem, Presentation presentation) {
+    public DrawController(DrawItem drawItem, Presentation presentation, Color color, int linesz) {
         this.drawItem = drawItem;
         this.presentation = presentation;
+        this.setColor(color);
+        this.setLineSize(linesz);
     }
 
     public Color getColor() {
@@ -57,9 +57,6 @@ public class DrawController implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        startX = -1;
-        startY = -1;
-
     }
 
     @Override
@@ -74,15 +71,13 @@ public class DrawController implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        if(startX > 0 && startY > 0) {
-            int nowX = e.getX() - OFFSET_X;
-            int nowY = e.getY() - OFFSET_Y;
-            LineStyle lineStyle = new LineStyle(getColor(), getLineSize());
-            drawItem.addLine(new Line(startX, startY, nowX, nowY, lineStyle));
-            startX = nowX;
-            startY = nowY;
-            presentation.update();
-        }
+        int nowX = e.getX() - OFFSET_X;
+        int nowY = e.getY() - OFFSET_Y;
+        LineStyle lineStyle = new LineStyle(getColor(), getLineSize());
+        drawItem.addLine(new Line(startX, startY, nowX, nowY, lineStyle));
+        startX = nowX;
+        startY = nowY;
+        presentation.update();
     }
 
     @Override

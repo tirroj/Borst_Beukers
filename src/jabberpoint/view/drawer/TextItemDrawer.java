@@ -42,21 +42,22 @@ public class TextItemDrawer implements Drawer{
         }
         return new Rectangle((int) (myStyle.getIndent()*scale), 0, xsize, ysize );    }
 
+     private void enableAntiAliasing(Graphics2D g2d) {
+         RenderingHints rh = new RenderingHints(
+                 RenderingHints.KEY_TEXT_ANTIALIASING,
+                 RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+         g2d.setRenderingHints(rh);
+     }
+
     @Override
     public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver o) {
         if (item.getText() == null || item.getText().length() == 0) {
           return;
         }
         List layouts = getLayouts(g, myStyle, scale);
-        Point pen = new Point(x + (int)(myStyle.getIndent() * scale), y + (int) (myStyle.getLeading() * scale));
+        Point pen = new Point(x + (int)(myStyle.getIndent() * scale), y + (int)(myStyle.getLeading() * scale));
         Graphics2D g2d = (Graphics2D)g;
-
-        //Enable antialiasing
-        RenderingHints rh = new RenderingHints(
-                RenderingHints.KEY_TEXT_ANTIALIASING,
-                RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2d.setRenderingHints(rh);
-
+        enableAntiAliasing(g2d);
         g2d.setColor(myStyle.getColor());
         Iterator it = layouts.iterator();
         while (it.hasNext()) {
@@ -72,6 +73,7 @@ public class TextItemDrawer implements Drawer{
         List<TextLayout> layouts = new ArrayList<TextLayout>();
         AttributedString attrStr = getAttributedString(s, scale);
         Graphics2D g2d = (Graphics2D) g;
+        enableAntiAliasing(g2d);
         FontRenderContext frc = g2d.getFontRenderContext();
         LineBreakMeasurer measurer = new LineBreakMeasurer(attrStr.getIterator(), frc);
         float wrappingWidth = (Slide.referenceWidth - s.getIndent()) * scale;
