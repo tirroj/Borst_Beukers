@@ -2,13 +2,16 @@ package jabberpoint.drawStyleDialogs;
 
 import javax.swing.*;
 import javax.swing.colorchooser.AbstractColorChooserPanel;
+import java.awt.Color;
 
-public class ColorChooser extends JColorChooser {
+public class ColorChooser {
+    private JColorChooser colorChooser;
     private AbstractColorChooserPanel colorPanel;
     private JDialog dialog;
 
     public ColorChooser() {
-        AbstractColorChooserPanel[] panels = getChooserPanels();
+        colorChooser = new JColorChooser();
+        AbstractColorChooserPanel[] panels = colorChooser.getChooserPanels();
         for (AbstractColorChooserPanel accp : panels) {
             if (accp.getDisplayName().equals("Swatches")) {
                 colorPanel = accp;
@@ -22,5 +25,6 @@ public class ColorChooser extends JColorChooser {
     public void showDialog() {
         dialog.setVisible(true);
     }
+    public Color getColor() {return colorChooser.getColor();}
 }
 
