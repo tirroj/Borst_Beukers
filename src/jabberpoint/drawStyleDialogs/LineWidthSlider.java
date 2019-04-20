@@ -1,4 +1,4 @@
-package jabberpoint.widthChooser;
+package jabberpoint.drawStyleDialogs;
 
 import javax.swing.JSlider;
 import javax.swing.JOptionPane;

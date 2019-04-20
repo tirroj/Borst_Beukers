@@ -4,8 +4,8 @@ import jabberpoint.file.Accessor;
 import jabberpoint.file.XMLAccessor;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
-import jabberpoint.colorchooser.ColorChooser;
-import jabberpoint.widthChooser.LineWidthSlider;
+import jabberpoint.drawStyleDialogs.ColorChooser;
+import jabberpoint.drawStyleDialogs.LineWidthSlider;
 
 import java.awt.*;
 import java.awt.event.ActionListener;

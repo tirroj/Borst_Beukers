@@ -1,4 +1,4 @@
-package jabberpoint.colorchooser;
+package jabberpoint.drawStyleDialogs;
 
 import javax.swing.*;
 import javax.swing.colorchooser.AbstractColorChooserPanel;
