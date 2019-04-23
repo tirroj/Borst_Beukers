@@ -24,9 +24,11 @@ import java.io.FileWriter;
  */
 
 public class XMLAccessor extends Accessor {
+  public XMLAccessor() {setExtension(".xml");}
 
-  public void loadFile(Presentation presentation, String filename) throws IOException {
+  public void loadFile(Presentation presentation, String fn) throws IOException {
     try {
+      String filename = fn + getExtension();
       SAXBuilder builder = new SAXBuilder(true);    // true -> validate
       Document document = builder.build(new File(filename)); // maak een JDOM document
       Element element = document.getRootElement();
@@ -75,7 +77,8 @@ public class XMLAccessor extends Accessor {
     }
   }
 
-  public void saveFile(Presentation presentation, String filename) throws IOException {
+  public void saveFile(Presentation presentation, String fn) throws IOException {
+    String filename = fn + getExtension();
     PrintWriter out = new PrintWriter(new FileWriter(filename));
     out.println("<?xml version=\"1.0\"?>");
     out.println("<!DOCTYPE slideshow SYSTEM \"jabberpoint.dtd\">");

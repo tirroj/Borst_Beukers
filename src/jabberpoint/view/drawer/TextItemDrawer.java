@@ -40,14 +40,15 @@ public class TextItemDrawer implements Drawer{
             }
             ysize += layout.getLeading() + layout.getDescent();
         }
-        return new Rectangle((int) (myStyle.getIndent()*scale), 0, xsize, ysize );    }
+        return new Rectangle((int) (myStyle.getIndent()*scale), 0, xsize, ysize );
+    }
 
-     private void enableAntiAliasing(Graphics2D g2d) {
-         RenderingHints rh = new RenderingHints(
-                 RenderingHints.KEY_TEXT_ANTIALIASING,
-                 RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-         g2d.setRenderingHints(rh);
-     }
+    private void enableAntiAliasing(Graphics2D g2d) {
+        RenderingHints rh = new RenderingHints(
+             RenderingHints.KEY_TEXT_ANTIALIASING,
+             RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2d.setRenderingHints(rh);
+    }
 
     @Override
     public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver o) {

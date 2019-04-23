@@ -46,9 +46,9 @@ public class MenuController extends MenuBar {
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
         presentation.clear();
-        Accessor xmlAccessor = new XMLAccessor();
+        Accessor accessor = new XMLAccessor();
         try {
-          xmlAccessor.loadFile(presentation, "test.xml");
+          accessor.loadFile(presentation, "dump");
           presentation.setSlideNumber(0);
         } catch (IOException exc) {
           JOptionPane.showMessageDialog(parent, "IOException: " + exc, "Load Error", JOptionPane.ERROR_MESSAGE);
@@ -60,18 +60,18 @@ public class MenuController extends MenuBar {
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
         presentation.clear();
-	parent.repaint();
+	    parent.repaint();
       }
     });
     fileMenu.add(menuItem = mkMenuItem("Save"));
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-	Accessor xmlAccessor = new XMLAccessor();
-	try {
-          xmlAccessor.saveFile(presentation, "dump.xml");
-	} catch (IOException exc) {
-          JOptionPane.showMessageDialog(parent, "IOException: " + exc, "Save Error", JOptionPane.ERROR_MESSAGE);
-	}
+        Accessor accessor = new XMLAccessor();
+        try {
+          accessor.saveFile(presentation, "dump");
+        } catch (IOException exc) {
+            JOptionPane.showMessageDialog(parent, "IOException: " + exc, "Save Error", JOptionPane.ERROR_MESSAGE);
+        }
       }
     });
     fileMenu.addSeparator();

@@ -18,8 +18,8 @@ public class LineWidthSlider {
         JOptionPane optionPane = new JOptionPane();
         optionPane.setMessage(new Object[] {"Select the width: ", slider});
         dialog = optionPane.createDialog(slider, "Line width selector");
-
     }
+
     public void showDialog() {
         dialog.setVisible(true);
     }

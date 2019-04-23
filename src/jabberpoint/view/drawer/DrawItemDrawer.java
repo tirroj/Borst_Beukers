@@ -30,7 +30,7 @@ public class DrawItemDrawer implements Drawer {
                 RenderingHints.VALUE_ANTIALIAS_ON);
         graphic2D.setRenderingHints(rh);
 
-        for (Line line :drawItem.getLines()) {
+        for (Line line : drawItem.getLines()) {
             graphic2D.setPaint(line.getStyle().getColor());
             graphic2D.setStroke(new BasicStroke(line.getStyle().getLineSize())); // hoe dik, later uit line
 
