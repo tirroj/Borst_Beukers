@@ -1,0 +1,31 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT slideshow (head,slide*)>
+<!ATTLIST slideshow
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT head (title)>
+<!ATTLIST head
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT slide (title*,items*)>
+<!ATTLIST slide
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT items (text+,image?)>
+<!ATTLIST items
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text
+  xmlns CDATA #FIXED ''
+  level CDATA #REQUIRED>
+
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image
+  xmlns CDATA #FIXED ''
+  level CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>

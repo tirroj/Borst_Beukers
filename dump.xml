@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE slideshow SYSTEM "jabberpoint.dtd">
-<presentation>
+<slideshow>
 <head><title>New presentation</title></head>
 <slide>
 <title>JabberPoint</title>
@@ -37,6 +37,12 @@
 <text level="1"> </text>
 <text level="1">Dit is het einde van de presentatie.</text>
 <image level="1">JabberPoint.jpg</image>
+</items>
+</slide>
+<slide>
+<title>De vierde slide</title>
+<items>
+<text level="2">TEST</text>
 </items>
 </slide>
 </slideshow>

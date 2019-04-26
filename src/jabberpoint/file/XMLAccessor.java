@@ -28,24 +28,28 @@ public class XMLAccessor extends Accessor {
 
   public void loadFile(Presentation presentation, String fn) throws IOException {
     try {
+      System.out.println("LOAD");
       String filename = fn + getExtension();
       SAXBuilder builder = new SAXBuilder(true);    // true -> validate
       Document document = builder.build(new File(filename)); // maak een JDOM document
       Element element = document.getRootElement();
       String title = element.getChild("head").getChild("title").getText();
+      presentation.clear();
       presentation.setTitle(title);
       List slides = element.getChildren("slide");
       for (int slideNumber = 0; slideNumber < slides.size(); slideNumber++) {
-	Element xmlSlide = (Element)slides.get(slideNumber);
-	Slide slide = new Slide();
-	slide.setTitle(xmlSlide.getChild("title").getText());
-	presentation.append(slide);
-	Element items = xmlSlide.getChild("items");
-	List slideItems = items.getChildren();
-	for (int itemNumber = 0; itemNumber < slideItems.size(); itemNumber++) {
-          Element item = (Element)slideItems.get(itemNumber);
-          loadSlideItem(slide, item);
-	}
+        Element xmlSlide = (Element)slides.get(slideNumber);
+        Slide slide = new Slide();
+        slide.setTitle(xmlSlide.getChild("title").getText());
+        presentation.append(slide);
+        Element items = xmlSlide.getChild("items");
+        if (items != null) {
+          List slideItems = items.getChildren();
+          for (int itemNumber = 0; itemNumber < slideItems.size(); itemNumber++) {
+            Element item = (Element) slideItems.get(itemNumber);
+            loadSlideItem(slide, item);
+          }
+        }
       }
     } catch (JDOMException jdx) {
       System.err.println(jdx.toString());
@@ -59,7 +63,7 @@ public class XMLAccessor extends Accessor {
     String leveltext = item.getAttributeValue("level");
     if (leveltext != null) {
       try {
-	level = Integer.parseInt(leveltext);
+	    level = Integer.parseInt(leveltext);
       }
       catch(NumberFormatException x) {
       }
@@ -78,11 +82,12 @@ public class XMLAccessor extends Accessor {
   }
 
   public void saveFile(Presentation presentation, String fn) throws IOException {
+    System.out.println("TEST");
     String filename = fn + getExtension();
     PrintWriter out = new PrintWriter(new FileWriter(filename));
     out.println("<?xml version=\"1.0\"?>");
     out.println("<!DOCTYPE slideshow SYSTEM \"jabberpoint.dtd\">");
-    out.println("<presentation>");
+    out.println("<slideshow>");
     out.print("<head><title>");
     out.print(presentation.getTitle());
     out.println("</title></head>");
