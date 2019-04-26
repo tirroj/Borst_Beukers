@@ -2,6 +2,7 @@ package jabberpoint.view.controller;
 
 import jabberpoint.file.Accessor;
 import jabberpoint.file.XMLAccessor;
+import jabberpoint.file.AccessorFactory;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
 import jabberpoint.drawStyleDialogs.ColorChooser;
@@ -46,8 +47,9 @@ public class MenuController extends MenuBar {
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
         presentation.clear();
-        Accessor accessor = new XMLAccessor();
+        Accessor accessor = AccessorFactory.getAccessor();
         try {
+
           accessor.loadFile(presentation, "dump");
           presentation.setSlideNumber(0);
         } catch (IOException exc) {
@@ -66,7 +68,7 @@ public class MenuController extends MenuBar {
     fileMenu.add(menuItem = mkMenuItem("Save"));
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        Accessor accessor = new XMLAccessor();
+        Accessor accessor = AccessorFactory.getAccessor();
         try {
           accessor.saveFile(presentation, "dump");
         } catch (IOException exc) {
