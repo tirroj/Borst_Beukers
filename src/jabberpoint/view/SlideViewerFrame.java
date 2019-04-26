@@ -18,7 +18,7 @@ import javax.swing.JFrame;
  */
 
 public class SlideViewerFrame extends JFrame {
-	private static final long serialVersionUID = 3227L;
+  private static final long serialVersionUID = 3227L;
   public SlideViewerFrame(String title, Presentation presentation) {
     super(title);
     SlideViewerComponent slideViewerComponent = new SlideViewerComponent(presentation);

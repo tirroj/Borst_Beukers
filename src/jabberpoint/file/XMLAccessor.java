@@ -28,7 +28,6 @@ public class XMLAccessor extends Accessor {
 
   public void loadFile(Presentation presentation, String fn) throws IOException {
     try {
-      System.out.println("LOAD");
       String filename = fn + getExtension();
       SAXBuilder builder = new SAXBuilder(true);    // true -> validate
       Document document = builder.build(new File(filename)); // maak een JDOM document

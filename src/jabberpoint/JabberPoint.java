@@ -40,6 +40,6 @@ public class JabberPoint {
 	JOptionPane.showMessageDialog(null,
 		"IO Error: " + ex, "JabberPoint Error",
 		JOptionPane.ERROR_MESSAGE);
-    }
   }
+}
 }

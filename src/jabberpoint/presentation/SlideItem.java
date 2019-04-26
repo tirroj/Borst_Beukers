@@ -1,6 +1,7 @@
 package jabberpoint.presentation;
 
 import jabberpoint.presentation.style.Style;
+import jabberpoint.presentation.style.StyleFactory;
 
 import java.awt.Rectangle;
 import java.awt.Graphics;
@@ -20,9 +21,11 @@ import java.awt.image.ImageObserver;
 
 public abstract class SlideItem {
   private int level = 0; // het level van het slideitem
+  private Style style;
 
   public SlideItem(int lev) {
     level = lev;
+    style = StyleFactory.getStyle(getLevel());
   }
 
   public SlideItem() {
@@ -33,6 +36,8 @@ public abstract class SlideItem {
   public int getLevel() {
     return level;
   }
+
+  public Style getStyle() { return style; }
 
 // Geef de bounding box
   //public abstract Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style style);

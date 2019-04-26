@@ -25,7 +25,8 @@ public class TextItemDrawer implements Drawer{
     }
 
     @Override
-    public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
+    public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale) {
+        Style myStyle = item.getStyle();
         List layouts = getLayouts(g, myStyle, scale);
         int xsize = 0, ysize = (int) (myStyle.getLeading() * scale);
         Iterator iterator = layouts.iterator();
@@ -51,10 +52,11 @@ public class TextItemDrawer implements Drawer{
     }
 
     @Override
-    public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver o) {
+    public void draw(int x, int y, float scale, Graphics g, ImageObserver o) {
         if (item.getText() == null || item.getText().length() == 0) {
           return;
         }
+        Style myStyle = item.getStyle();
         List layouts = getLayouts(g, myStyle, scale);
         Point pen = new Point(x + (int)(myStyle.getIndent() * scale), y + (int)(myStyle.getLeading() * scale));
         Graphics2D g2d = (Graphics2D)g;

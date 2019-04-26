@@ -69,7 +69,6 @@ public class MenuController extends MenuBar {
       public void actionPerformed(ActionEvent e) {
         Accessor accessor = AccessorFactory.getAccessor();
         try {
-          System.out.println("CALL");
           accessor.saveFile(presentation, "dump");
         } catch (IOException exc) {
             JOptionPane.showMessageDialog(parent, "IOException: " + exc, "Save Error", JOptionPane.ERROR_MESSAGE);

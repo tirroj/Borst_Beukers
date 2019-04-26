@@ -15,14 +15,16 @@ public class BitmapItemDrawer implements Drawer {
     }
 
     @Override
-    public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle) {
+    public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale) {
+        Style myStyle = bitmapItem.getStyle();
         return new Rectangle((int) (myStyle.getIndent() * scale), 0,
                 (int) (bitmapItem.getBufferedImage().getWidth(observer) * scale),
                 ((int) (myStyle.getLeading() * scale)) + (int) (bitmapItem.getBufferedImage().getHeight(observer) * scale));
     }
 
     @Override
-    public void draw(int x, int y, float scale, Graphics g, Style myStyle, ImageObserver observer) {
+    public void draw(int x, int y, float scale, Graphics g, ImageObserver observer) {
+        Style myStyle = bitmapItem.getStyle();
         BufferedImage bufferedImage = bitmapItem.getBufferedImage();
         int width = x + (int) (myStyle.getIndent() * scale);
         int height = y + (int) (myStyle.getLeading() * scale);

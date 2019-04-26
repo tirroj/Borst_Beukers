@@ -22,17 +22,15 @@ public class SlideDrawer {
         int y = area.y;
         // De titel wordt apart behandeld
         SlideItem slideItem = new TextItem(0, slide.getTitle());
-        Style style = Style.getStyle(slideItem.getLevel());
         Drawer drawer = getDrawer(slideItem);
-        drawer.draw(area.x, y, scale, g, style, view);
-        y += drawer.getBoundingBox(g, view, scale, style).height;
+        drawer.draw(area.x, y, scale, g, view);
+        y += drawer.getBoundingBox(g, view, scale).height;
 
         for (int number=0; number<slide.getSize(); number++) {
             slideItem = (SlideItem)slide.getSlideItems().elementAt(number);
             drawer = getDrawer(slideItem);
-            style = Style.getStyle(slideItem.getLevel());
-            drawer.draw(area.x, y, scale, g, style, view);
-            y += drawer.getBoundingBox(g, view, scale, style).height;
+            drawer.draw(area.x, y, scale, g, view);
+            y += drawer.getBoundingBox(g, view, scale).height;
         }
     }
 

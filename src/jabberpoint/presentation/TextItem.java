@@ -1,7 +1,5 @@
 package jabberpoint.presentation;
 
-import jabberpoint.presentation.style.Style;
-
 import java.awt.Rectangle;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -32,7 +30,7 @@ import java.util.ArrayList;
 public class TextItem extends SlideItem {
   private String text;
 
-// een textitem van level level, met als tekst string
+  // een textitem van level level, met als tekst string
   public TextItem(int level, String string) {
     super(level);
     text = string;
@@ -52,4 +50,5 @@ public class TextItem extends SlideItem {
   public String toString() {
     return "presentation.TextItem[" + getLevel()+","+getText()+"]";
   }
+
 }

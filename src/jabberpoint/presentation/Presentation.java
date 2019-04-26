@@ -110,8 +110,8 @@ public class Presentation {
   }
 
   public void update() {
-      if (getCurrentSlide() != null)
-        slideViewComponent.update(this, getCurrentSlide());
+    if (getCurrentSlide() != null)
+      slideViewComponent.update(this, getCurrentSlide());
   }
 
   public void exit(int n) {
