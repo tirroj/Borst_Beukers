@@ -1,7 +1,6 @@
 package jabberpoint;
 
-import jabberpoint.file.Accessor;
-import jabberpoint.file.XMLAccessor;
+import jabberpoint.file.AccessorFactory;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.SlideViewerFrame;
 
@@ -29,9 +28,9 @@ public class JabberPoint {
     new SlideViewerFrame("JabberPoint 1.4 - OU version", presentation);
     try {
       if (argv.length == 0) { // een demo presentatie
-        Accessor.getDemoAccessor().loadFile(presentation, "");
+        AccessorFactory.getDemoAccessor().loadFile(presentation, "");
       } else {
-        new XMLAccessor().loadFile(presentation, argv[0]);
+        AccessorFactory.getAccessor().loadFile(presentation, argv[0]);
       }
       presentation.setSlideNumber(0);
     } catch (IOException ex) {
