@@ -4,14 +4,14 @@ import jabberpoint.file.Accessor;
 import jabberpoint.file.AccessorFactory;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
-import jabberpoint.drawstyledialogs.ColorChooser;
-import jabberpoint.drawstyledialogs.LineWidthSlider;
+import jabberpoint.view.drawstyledialogs.ColorChooser;
+import jabberpoint.view.drawstyledialogs.LineWidthSlider;
 
+import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
-import javax.swing.JOptionPane;
 
 /** De controller voor het menu
  * <P>

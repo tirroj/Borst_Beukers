@@ -1,4 +1,4 @@
-package jabberpoint.drawstyledialogs;
+package jabberpoint.view.drawstyledialogs;
 
 import javax.swing.JSlider;
 import javax.swing.JOptionPane;
