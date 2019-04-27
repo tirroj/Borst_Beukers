@@ -4,10 +4,10 @@ import jabberpoint.presentation.Presentation;
 import jabberpoint.view.controller.KeyController;
 import jabberpoint.view.controller.MenuController;
 
-import java.awt.Dimension;
-import java.awt.event.WindowEvent;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
-import javax.swing.JFrame;
+import java.awt.event.WindowEvent;
 
 /**
  * Het applicatiewindow voor een slideviewcomponent
@@ -27,8 +27,10 @@ public class SlideViewerFrame extends JFrame {
   }
 
 // De GUI opzetten
+
   public void setupWindow(SlideViewerComponent slideViewerComponent, Presentation presentation) {
     addWindowListener(new WindowAdapter() {
+      @Override
       public void windowClosing(WindowEvent e) {
 	System.exit(0);
       }

@@ -28,7 +28,8 @@ public class TextItemDrawer implements Drawer{
     public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale) {
         Style myStyle = item.getStyle();
         List layouts = getLayouts(g, myStyle, scale);
-        int xsize = 0, ysize = (int) (myStyle.getLeading() * scale);
+        int xsize = 0;
+        int ysize = (int) (myStyle.getLeading() * scale);
         Iterator iterator = layouts.iterator();
         while (iterator.hasNext()) {
             TextLayout layout = (TextLayout) iterator.next();
@@ -73,13 +74,13 @@ public class TextItemDrawer implements Drawer{
     }
 
     private List getLayouts(Graphics g, Style s, float scale) {
-        List<TextLayout> layouts = new ArrayList<TextLayout>();
+        List<TextLayout> layouts = new ArrayList<>();
         AttributedString attrStr = getAttributedString(s, scale);
         Graphics2D g2d = (Graphics2D) g;
         enableAntiAliasing(g2d);
         FontRenderContext frc = g2d.getFontRenderContext();
         LineBreakMeasurer measurer = new LineBreakMeasurer(attrStr.getIterator(), frc);
-        float wrappingWidth = (Slide.referenceWidth - s.getIndent()) * scale;
+        float wrappingWidth = (Slide.REFERENCE_WIDTH - s.getIndent()) * scale;
         while (measurer.getPosition() < item.getText().length()) {
             TextLayout layout = measurer.nextLayout(wrappingWidth);
             layouts.add(layout);

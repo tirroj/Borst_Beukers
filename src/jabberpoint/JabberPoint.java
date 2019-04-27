@@ -3,10 +3,9 @@ package jabberpoint;
 import jabberpoint.file.Accessor;
 import jabberpoint.file.XMLAccessor;
 import jabberpoint.presentation.Presentation;
-import jabberpoint.presentation.style.Style;
 import jabberpoint.view.SlideViewerFrame;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 import java.io.IOException;
 
 /** JabberPoint Main Programma
@@ -25,7 +24,7 @@ import java.io.IOException;
 public class JabberPoint {
 
   /** Het Main Programma */
-  public static void main(String argv[]) {
+  public static void main(String[] argv) {
     Presentation presentation = new Presentation();
     new SlideViewerFrame("JabberPoint 1.4 - OU version", presentation);
     try {

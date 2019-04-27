@@ -7,9 +7,9 @@ public class JSONAccessor extends Accessor {
     public JSONAccessor() {setExtension(".json");}
 
     public void loadFile(Presentation presentation, String fn) throws IOException {
-        String filename = fn + getExtension();
+        // not implemented
     }
     public void saveFile(Presentation presentation, String fn) throws IOException {
-        String filename = fn + getExtension();
+        // not implemented
     }
 }

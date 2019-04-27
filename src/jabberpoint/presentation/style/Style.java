@@ -29,7 +29,8 @@ public class Style {
   public Style(int indent, Color color, int points, int leading) {
     this.indent = indent;
     this.color = color;
-    font = new Font("Helvetica", Font.BOLD, fontSize=points);
+    fontSize = points;
+    font = new Font("Helvetica", Font.BOLD, fontSize);
     this.leading = leading;
   }
 

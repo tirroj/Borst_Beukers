@@ -1,13 +1,8 @@
 package jabberpoint.presentation;
 
-import jabberpoint.presentation.style.Style;
-
-import java.awt.Rectangle;
-import java.awt.Graphics;
-import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
-import java.io.File;
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 

@@ -82,7 +82,7 @@ public class Presentation {
 
 // Verwijder de presentatie, om klaar te zijn voor de volgende
   public void clear() {
-    showList = new ArrayList<Slide>();
+    showList = new ArrayList<>();
     setTitle("New presentation");
     setSlideNumber(-1);
   }
@@ -97,7 +97,7 @@ public class Presentation {
     if (number < 0 || number >= getSize()){
         return null;
     }
-    return (Slide)showList.get(number);
+    return showList.get(number);
   }
 
 // Geef de huidige presentation.Slide

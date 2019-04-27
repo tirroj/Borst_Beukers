@@ -3,7 +3,6 @@ package jabberpoint.view.drawer;
 import jabberpoint.presentation.Slide;
 import jabberpoint.presentation.SlideItem;
 import jabberpoint.presentation.TextItem;
-import jabberpoint.presentation.style.Style;
 
 import java.awt.*;
 import java.awt.image.ImageObserver;
@@ -36,7 +35,7 @@ public class SlideDrawer {
 
     // geef de schaal om de slide te kunnen tekenen
     private float getScale(Rectangle area) {
-        return Math.min(((float)area.width) / ((float)slide.referenceWidth), ((float)area.height) / ((float)slide.referenceHeight));
+        return Math.min(((float)area.width) / ((float) Slide.REFERENCE_WIDTH), ((float)area.height) / ((float) Slide.REFERENCE_HEIGHT));
     }
 
     private Drawer getDrawer(SlideItem item){

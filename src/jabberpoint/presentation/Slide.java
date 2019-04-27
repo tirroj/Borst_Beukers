@@ -1,10 +1,5 @@
 package jabberpoint.presentation;
 
-import jabberpoint.presentation.style.Style;
-
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.image.ImageObserver;
 import java.util.Vector;
 
 /** Ean slide
@@ -21,13 +16,13 @@ import java.util.Vector;
  */
 
 public class Slide {
-  public final static int referenceWidth = 800;
-  public final static int referenceHeight = 600;
+  public final static int REFERENCE_WIDTH = 800;
+  public final static int REFERENCE_HEIGHT = 600;
   protected String title; // de titel wordt apart bewaard
   protected Vector<SlideItem> items; // de slide-items wordne in een Vector bewaard
 
   public Slide() {
-    items = new Vector<SlideItem>();
+    items = new Vector<>();
   }
 
 // Voeg een SlideItem toe
@@ -52,7 +47,7 @@ public class Slide {
 
 // geef het betreffende SlideItem
   public SlideItem getSlideItem(int number) {
-    return (SlideItem)items.elementAt(number);
+    return items.elementAt(number);
   }
 
 // geef alle SlideItems in een Vector

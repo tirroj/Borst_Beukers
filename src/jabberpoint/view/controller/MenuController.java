@@ -1,12 +1,11 @@
 package jabberpoint.view.controller;
 
 import jabberpoint.file.Accessor;
-import jabberpoint.file.XMLAccessor;
 import jabberpoint.file.AccessorFactory;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.view.AboutBox;
-import jabberpoint.drawStyleDialogs.ColorChooser;
-import jabberpoint.drawStyleDialogs.LineWidthSlider;
+import jabberpoint.drawstyledialogs.ColorChooser;
+import jabberpoint.drawstyledialogs.LineWidthSlider;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -99,7 +98,7 @@ public class MenuController extends MenuBar {
     viewMenu.add(menuItem = mkMenuItem("Goto"));
     menuItem.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent actionEvent) {
-	String pageNumberStr = JOptionPane.showInputDialog((Object)"Page number?");
+	String pageNumberStr = JOptionPane.showInputDialog("Page number?");
 	int pageNumber = Integer.parseInt(pageNumberStr);
 	presentation.setSlideNumber(pageNumber - 1);
       }

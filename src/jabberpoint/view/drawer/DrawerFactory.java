@@ -14,7 +14,6 @@ public class DrawerFactory {
         if(slideItem instanceof DrawItem){
             return new DrawItemDrawer((DrawItem)slideItem);
         }
-        //throw new Exception();
         return null;
     }
 

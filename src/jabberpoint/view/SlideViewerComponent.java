@@ -4,12 +4,8 @@ import jabberpoint.presentation.Presentation;
 import jabberpoint.presentation.Slide;
 import jabberpoint.view.drawer.DrawerFactory;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import javax.swing.JComponent;
+import javax.swing.*;
+import java.awt.*;
 
 /** view.SlideViewerComponent is een grafische component die Slides kan laten zien.
  * <P>
@@ -36,9 +32,11 @@ public class SlideViewerComponent extends JComponent {
     labelFont = new Font("Dialog", Font.BOLD, 10);
   }
 
+  @Override
   public Dimension getPreferredSize() {
-    return new Dimension(Slide.referenceWidth, Slide.referenceHeight);
+    return new Dimension(Slide.REFERENCE_WIDTH, Slide.REFERENCE_HEIGHT);
   }
+
 
   public void update(Presentation presentation, Slide data) {
     this.presentation = presentation;
@@ -47,6 +45,7 @@ public class SlideViewerComponent extends JComponent {
   }
 
 // teken de slide
+  @Override
   public void paintComponent(Graphics g) {
     g.setColor(Color.white);
     g.fillRect(0, 0, getSize().width, getSize().height);

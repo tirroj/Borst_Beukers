@@ -2,8 +2,8 @@ package jabberpoint.view.drawer;
 
 import jabberpoint.presentation.DrawItem;
 import jabberpoint.presentation.Line;
+
 import java.awt.*;
-import java.awt.geom.Line2D;
 import java.awt.image.ImageObserver;
 
 public class DrawItemDrawer implements Drawer {

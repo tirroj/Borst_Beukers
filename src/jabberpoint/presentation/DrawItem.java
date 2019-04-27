@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DrawItem extends SlideItem {
 
-    List<Line> lines = new ArrayList<Line>();
+    List<Line> lines = new ArrayList<>();
 
     public List<Line> getLines() {
         return lines;

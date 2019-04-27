@@ -1,17 +1,17 @@
 package jabberpoint.file;
 
-import java.util.List;
-import java.util.Vector;
+import jabberpoint.presentation.*;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
-import jabberpoint.presentation.*;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.FileWriter;
+import java.util.List;
+import java.util.Vector;
 
 
 /**

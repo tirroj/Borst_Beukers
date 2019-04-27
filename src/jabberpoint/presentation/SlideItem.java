@@ -3,10 +3,6 @@ package jabberpoint.presentation;
 import jabberpoint.presentation.style.Style;
 import jabberpoint.presentation.style.StyleFactory;
 
-import java.awt.Rectangle;
-import java.awt.Graphics;
-import java.awt.image.ImageObserver;
-
 /** De abstracte klasse voor een item op een presentation.Slide
  * <P>
  * This program is distributed under the terms of the accompanying
