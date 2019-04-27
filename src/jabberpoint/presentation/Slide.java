@@ -2,7 +2,6 @@ package jabberpoint.presentation;
 
 import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.slideitem.SlideItem;
-import jabberpoint.presentation.slideitem.TextItem;
 
 import java.util.Vector;
 
@@ -46,7 +45,7 @@ public class Slide {
 
 // Maak een TextItem van String, en voeg het TextItem toe
   public void append(int level, String message) {
-    append(new TextItem(level, message));
+    append(ItemFactory.getItem(ItemFactory.TEXT, level, message));
   }
 
 // geef het betreffende SlideItem
@@ -66,6 +65,6 @@ public class Slide {
 
   // teken op slide
   public void startTekenen(){
-    items.add(ItemFactory.getItem("draw", 0 , null));
+    items.add(ItemFactory.getItem(ItemFactory.DRAW, 0 , null));
   }
 }

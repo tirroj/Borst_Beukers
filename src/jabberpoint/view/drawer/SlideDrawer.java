@@ -1,8 +1,8 @@
 package jabberpoint.view.drawer;
 
 import jabberpoint.presentation.Slide;
+import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.slideitem.SlideItem;
-import jabberpoint.presentation.slideitem.TextItem;
 
 import java.awt.*;
 import java.awt.image.ImageObserver;
@@ -20,7 +20,7 @@ public class SlideDrawer {
         float scale = getScale(area);
         int y = area.y;
         // De titel wordt apart behandeld
-        SlideItem slideItem = new TextItem(0, slide.getTitle());
+        SlideItem slideItem = ItemFactory.getItem(ItemFactory.TEXT, 0, slide.getTitle());
         Drawer drawer = getDrawer(slideItem);
         drawer.draw(area.x, y, scale, g, view);
         y += drawer.getBoundingBox(g, view, scale).height;
