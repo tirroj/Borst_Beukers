@@ -63,7 +63,7 @@ public class Presentation {
   public void setSlideNumber(int number) {
     currentSlideNumber = number;
     if (slideViewComponent != null) {
-      slideViewComponent.update(this, getCurrentSlide());
+      slideViewComponent.update(this);
     }
   }
 
@@ -112,7 +112,7 @@ public class Presentation {
 
   public void update() {
     if (getCurrentSlide() != null)
-      slideViewComponent.update(this, getCurrentSlide());
+      slideViewComponent.update(this);
   }
 
   public void exit(int n) {
