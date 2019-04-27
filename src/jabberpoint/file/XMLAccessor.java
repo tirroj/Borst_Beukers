@@ -2,6 +2,7 @@ package jabberpoint.file;
 
 import jabberpoint.presentation.*;
 import jabberpoint.presentation.slideitem.BitmapItem;
+import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.slideitem.SlideItem;
 import jabberpoint.presentation.slideitem.TextItem;
 import org.jdom.Document;
@@ -70,16 +71,11 @@ public class XMLAccessor extends Accessor {
       catch(NumberFormatException x) {
       }
     }
-    if ("text".equals(type)) {
-      slide.append(new TextItem(level, item.getText()));
-    }
-    else {
-      if ("image".equals(type)) {
-        slide.append(new BitmapItem(level, item.getText()));
-      }
-      else {
+    SlideItem slideItem = ItemFactory.getItem(type, level, item.getText());
+    if(slideItem != null){
+        slide.append(slideItem);
+    } else {
         System.err.println("Unknown element type");
-      }
     }
   }
 

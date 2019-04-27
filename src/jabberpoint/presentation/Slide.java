@@ -1,6 +1,6 @@
 package jabberpoint.presentation;
 
-import jabberpoint.presentation.slideitem.DrawItem;
+import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.slideitem.SlideItem;
 import jabberpoint.presentation.slideitem.TextItem;
 
@@ -65,9 +65,7 @@ public class Slide {
   }
 
   // teken op slide
-  public DrawItem startTekenen(){
-    DrawItem draw = new DrawItem();
-    items.add(draw);
-    return draw;
+  public void startTekenen(){
+    items.add(ItemFactory.getItem("draw", 0 , null));
   }
 }
