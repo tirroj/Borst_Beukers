@@ -1,4 +1,4 @@
-package jabberpoint.presentation;
+package jabberpoint.presentation.slideitem;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

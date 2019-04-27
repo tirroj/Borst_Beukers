@@ -1,6 +1,6 @@
 package jabberpoint.view.drawer;
 
-import jabberpoint.presentation.BitmapItem;
+import jabberpoint.presentation.slideitem.BitmapItem;
 import jabberpoint.presentation.style.Style;
 
 import java.awt.*;

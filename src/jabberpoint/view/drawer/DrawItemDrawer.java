@@ -1,6 +1,6 @@
 package jabberpoint.view.drawer;
 
-import jabberpoint.presentation.DrawItem;
+import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.presentation.Line;
 
 import java.awt.*;

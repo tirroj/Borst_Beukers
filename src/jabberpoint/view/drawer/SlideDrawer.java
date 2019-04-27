@@ -1,8 +1,8 @@
 package jabberpoint.view.drawer;
 
 import jabberpoint.presentation.Slide;
-import jabberpoint.presentation.SlideItem;
-import jabberpoint.presentation.TextItem;
+import jabberpoint.presentation.slideitem.SlideItem;
+import jabberpoint.presentation.slideitem.TextItem;
 
 import java.awt.*;
 import java.awt.image.ImageObserver;

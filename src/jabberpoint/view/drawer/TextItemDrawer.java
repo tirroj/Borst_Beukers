@@ -1,7 +1,7 @@
 package jabberpoint.view.drawer;
 
 import jabberpoint.presentation.Slide;
-import jabberpoint.presentation.TextItem;
+import jabberpoint.presentation.slideitem.TextItem;
 import jabberpoint.presentation.style.Style;
 
 import java.awt.*;

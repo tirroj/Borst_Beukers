@@ -1,6 +1,10 @@
 package jabberpoint.view.drawer;
 
 import jabberpoint.presentation.*;
+import jabberpoint.presentation.slideitem.BitmapItem;
+import jabberpoint.presentation.slideitem.DrawItem;
+import jabberpoint.presentation.slideitem.SlideItem;
+import jabberpoint.presentation.slideitem.TextItem;
 
 public class DrawerFactory {
 

@@ -1,6 +1,9 @@
 package jabberpoint.file;
 
 import jabberpoint.presentation.*;
+import jabberpoint.presentation.slideitem.BitmapItem;
+import jabberpoint.presentation.slideitem.SlideItem;
+import jabberpoint.presentation.slideitem.TextItem;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;

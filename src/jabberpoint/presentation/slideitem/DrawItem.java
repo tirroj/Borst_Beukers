@@ -1,4 +1,6 @@
-package jabberpoint.presentation;
+package jabberpoint.presentation.slideitem;
+
+import jabberpoint.presentation.Line;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package jabberpoint.view.controller;
 
-import jabberpoint.presentation.DrawItem;
+import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.presentation.Line;
 import jabberpoint.presentation.Presentation;
 import jabberpoint.presentation.style.LineStyle;

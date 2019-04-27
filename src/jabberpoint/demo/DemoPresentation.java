@@ -2,6 +2,7 @@ package jabberpoint.demo;
 
 import jabberpoint.file.Accessor;
 import jabberpoint.presentation.*;
+import jabberpoint.presentation.slideitem.BitmapItem;
 
 /** Een ingebouwde demo-presentatie
  *

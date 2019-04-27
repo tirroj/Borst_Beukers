@@ -1,5 +1,9 @@
 package jabberpoint.presentation;
 
+import jabberpoint.presentation.slideitem.DrawItem;
+import jabberpoint.presentation.slideitem.SlideItem;
+import jabberpoint.presentation.slideitem.TextItem;
+
 import java.util.Vector;
 
 /** Ean slide

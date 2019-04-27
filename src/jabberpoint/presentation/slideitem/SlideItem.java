@@ -1,4 +1,4 @@
-package jabberpoint.presentation;
+package jabberpoint.presentation.slideitem;
 
 import jabberpoint.presentation.style.Style;
 import jabberpoint.presentation.style.StyleFactory;

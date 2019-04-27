@@ -1,4 +1,4 @@
-package jabberpoint.presentation;
+package jabberpoint.presentation.slideitem;
 
 /** Een tekst item
  * <P>

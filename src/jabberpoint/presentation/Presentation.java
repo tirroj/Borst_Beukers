@@ -1,5 +1,6 @@
 package jabberpoint.presentation;
 
+import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.view.SlideViewerComponent;
 
 import java.util.ArrayList;
