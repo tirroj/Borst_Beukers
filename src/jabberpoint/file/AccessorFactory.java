@@ -1,7 +1,7 @@
 package jabberpoint.file;
 
 public class AccessorFactory {
-    public static XMLAccessor getAccessor() {
+    public static Accessor getAccessor() {
         return new XMLAccessor();
     }
 
