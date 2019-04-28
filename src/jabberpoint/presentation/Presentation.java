@@ -1,6 +1,5 @@
 package jabberpoint.presentation;
 
-import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.view.SlideViewerComponent;
 
 import java.util.ArrayList;
@@ -104,10 +103,6 @@ public class Presentation {
 // Geef de huidige presentation.Slide
   public Slide getCurrentSlide() {
     return getSlide(currentSlideNumber);
-  }
-
-  public DrawItem startTekenen(){
-    return getCurrentSlide().startTekenen();
   }
 
   public void update() {

@@ -3,6 +3,7 @@ package jabberpoint.view.controller;
 import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.presentation.Line;
 import jabberpoint.presentation.Presentation;
+import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.style.LineStyle;
 
 import java.awt.*;
@@ -21,9 +22,10 @@ public class DrawController implements MouseListener, MouseMotionListener {
     private int lineSize = 0;
 
 
-    public DrawController(DrawItem drawItem, Presentation presentation, Color color, int linesz) {
-        this.drawItem = drawItem;
+    public DrawController(Presentation presentation, Color color, int linesz) {
+        this.drawItem = (DrawItem) ItemFactory.getItem(ItemFactory.DRAW,0,null);
         this.presentation = presentation;
+        presentation.getCurrentSlide().append(drawItem);
         this.setColor(color);
         this.setLineSize(linesz);
     }
