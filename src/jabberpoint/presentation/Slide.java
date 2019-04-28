@@ -1,5 +1,6 @@
 package jabberpoint.presentation;
 
+import jabberpoint.presentation.slideitem.DrawItem;
 import jabberpoint.presentation.slideitem.ItemFactory;
 import jabberpoint.presentation.slideitem.SlideItem;
 
@@ -64,7 +65,9 @@ public class Slide {
   }
 
   // teken op slide
-  public void startTekenen(){
-    items.add(ItemFactory.getItem(ItemFactory.DRAW, 0 , null));
+  public DrawItem startTekenen(){
+    DrawItem drawItem = (DrawItem)ItemFactory.getItem(ItemFactory.DRAW, 0 , null);
+    items.add(drawItem);
+    return drawItem;
   }
 }
