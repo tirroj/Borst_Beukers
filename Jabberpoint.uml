@@ -3,609 +3,603 @@
   <ID>JAVA</ID>
   <OriginalElement>jabberpoint</OriginalElement>
   <nodes>
-    <node x="2169.870730024283" y="2152.5">jabberpoint.file.Accessor</node>
-    <node x="281.96202572570974" y="232.0">jabberpoint.presentation.style.LineStyle</node>
-    <node x="2443.680253833807" y="2423.0">jabberpoint.file.XMLAccessor</node>
-    <node x="1887.8943644717338" y="933.0">jabberpoint.presentation.Slide</node>
-    <node x="1927.71046706526" y="2434.0">jabberpoint.demo.DemoPresentation</node>
-    <node x="1108.0943644717336" y="1420.0">jabberpoint.view.drawer.DrawerFactory</node>
-    <node x="315.8146337319266" y="353.0">jabberpoint.presentation.Line</node>
-    <node x="1601.7999999999997" y="1215.0">jabberpoint.view.drawer.SlideDrawer</node>
-    <node x="1798.0181593729524" y="2185.5">jabberpoint.view.controller.KeyController</node>
-    <node x="564.9999999999999" y="1226.0">jabberpoint.view.drawer.BitmapItemDrawer</node>
-    <node x="2218.680253833807" y="2434.0">jabberpoint.file.JSONAccessor</node>
-    <node x="1275.7563003985933" y="590.0">jabberpoint.presentation.slideitem.BitmapItem</node>
-    <node x="943.6765825051358" y="2748.0">jabberpoint.view.controller.MenuController</node>
-    <node x="1681.0745257257097" y="386.0">jabberpoint.presentation.slideitem.SlideItem</node>
-    <node x="54.5" y="2097.0">jabberpoint.view.controller.DrawController</node>
-    <node x="343.8979670652601" y="601.0">jabberpoint.presentation.slideitem.DrawItem</node>
-    <node x="2229.932826010195" y="2576.5">jabberpoint.file.AccessorFactory</node>
-    <node x="1628.0745257257097" y="0.0">jabberpoint.presentation.style.Style</node>
-    <node x="877.4265825051358" y="2847.0">jabberpoint.view.SlideViewerFrame</node>
-    <node x="881.2561279596813" y="2576.0">jabberpoint.view.drawstyledialogs.LineWidthSlider</node>
-    <node x="1724.904523009316" y="2587.5">jabberpoint.view.AboutBox</node>
-    <node x="1152.7999999999997" y="1193.0">jabberpoint.view.drawer.TextItemDrawer</node>
-    <node x="766.7499999999999" y="977.5">jabberpoint.view.drawer.Drawer</node>
-    <node x="901.5515825051358" y="2946.0">jabberpoint.JabberPoint</node>
-    <node x="1513.7999999999997" y="834.0">jabberpoint.presentation.slideitem.ItemFactory</node>
-    <node x="1792.83546706526" y="1685.0">jabberpoint.presentation.Presentation</node>
-    <node x="1473.7563003985933" y="601.0">jabberpoint.presentation.slideitem.TextItem</node>
-    <node x="1741.58546706526" y="1541.0">jabberpoint.view.SlideViewerComponent</node>
-    <node x="1042.2561279596812" y="2576.0">jabberpoint.view.drawstyledialogs.ColorChooser</node>
-    <node x="193.0" y="1226.0">jabberpoint.view.drawer.DrawItemDrawer</node>
-    <node x="1707.5745257257097" y="243.0">jabberpoint.presentation.style.StyleFactory</node>
+    <node x="2363.3050881778154" y="242.0">jabberpoint.presentation.style.LineStyle</node>
+    <node x="454.28076923076935" y="2162.5">jabberpoint.file.Accessor</node>
+    <node x="589.396590909091" y="923.0">jabberpoint.presentation.Slide</node>
+    <node x="76.05000000000018" y="2463.0">jabberpoint.file.XMLAccessor</node>
+    <node x="319.0500000000002" y="2474.0">jabberpoint.demo.DemoPresentation</node>
+    <node x="1482.164639419025" y="1450.0">jabberpoint.view.drawer.DrawerFactory</node>
+    <node x="2284.104924242424" y="363.0">jabberpoint.presentation.Line</node>
+    <node x="1281.9398601398602" y="2195.5">jabberpoint.view.controller.KeyController</node>
+    <node x="938.1882575757577" y="1245.0">jabberpoint.view.drawer.SlideDrawer</node>
+    <node x="1846.188257575758" y="1256.0">jabberpoint.view.drawer.BitmapItemDrawer</node>
+    <node x="567.2807692307694" y="2474.0">jabberpoint.file.JSONAccessor</node>
+    <node x="1094.8884215111486" y="580.0">jabberpoint.presentation.slideitem.BitmapItem</node>
+    <node x="898.5307692307695" y="2788.0">jabberpoint.view.controller.MenuController</node>
+    <node x="780.3884215111486" y="396.0">jabberpoint.presentation.slideitem.SlideItem</node>
+    <node x="2485.188257575758" y="2107.0">jabberpoint.view.controller.DrawController</node>
+    <node x="2224.021590909091" y="591.0">jabberpoint.presentation.slideitem.DrawItem</node>
+    <node x="807.1384215111489" y="0.0">jabberpoint.presentation.style.Style</node>
+    <node x="257.3000000000002" y="2616.5">jabberpoint.file.AccessorFactory</node>
+    <node x="1150.9899599318458" y="2907.0">jabberpoint.view.SlideViewerFrame</node>
+    <node x="817.9398601398602" y="2616.0">jabberpoint.view.drawstyledialogs.LineWidthSlider</node>
+    <node x="978.9398601398602" y="2627.5">jabberpoint.view.AboutBox</node>
+    <node x="1243.1882575757577" y="1223.0">jabberpoint.view.drawer.TextItemDrawer</node>
+    <node x="1615.1882575757577" y="967.5">jabberpoint.view.drawer.Drawer</node>
+    <node x="377.9466907010765" y="3006.0">jabberpoint.JabberPoint</node>
+    <node x="575.6384215111486" y="804.0">jabberpoint.presentation.slideitem.ItemFactory</node>
+    <node x="820.3431933146237" y="1715.0">jabberpoint.presentation.Presentation</node>
+    <node x="746.6384215111486" y="591.0">jabberpoint.presentation.slideitem.TextItem</node>
+    <node x="1129.9398601398602" y="2616.0">jabberpoint.view.drawstyledialogs.ColorChooser</node>
+    <node x="872.6765266479571" y="1571.0">jabberpoint.view.SlideViewerComponent</node>
+    <node x="2207.188257575758" y="1256.0">jabberpoint.view.drawer.DrawItemDrawer</node>
+    <node x="810.6384215111486" y="253.0">jabberpoint.presentation.style.StyleFactory</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="jabberpoint.presentation.slideitem.BitmapItem" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="44.5" y="-47.0" />
-      <point x="1409.2563003985933" y="540.0" />
-      <point x="1710.0290711802552" y="540.0" />
-      <point x="-16.545454545454504" y="35.5" />
-    </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.view.AboutBox">
-      <point x="53.454545454545496" y="-24.5" />
-      <point x="1095.1311279596812" y="2708.0" />
-      <point x="1785.904523009316" y="2708.0" />
+      <point x="-18.545454545454504" y="-24.5" />
+      <point x="981.985314685315" y="2708.0" />
+      <point x="1043.9398601398602" y="2708.0" />
       <point x="0.0" y="24.5" />
+    </edge>
+    <edge source="jabberpoint.presentation.slideitem.BitmapItem" target="jabberpoint.presentation.slideitem.SlideItem">
+      <point x="-44.5" y="-47.0" />
+      <point x="1139.3884215111486" y="550.0" />
+      <point x="847.8884215111486" y="550.0" />
+      <point x="18.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.file.Accessor" target="jabberpoint.presentation.Presentation">
       <point x="0.0" y="-57.5" />
-      <point x="2272.370730024283" y="2057.0" />
-      <point x="1938.258543988337" y="2057.0" />
-      <point x="45.923076923076906" y="146.0" />
+      <point x="556.7807692307694" y="2067.0" />
+      <point x="873.9201163915468" y="2067.0" />
+      <point x="-45.923076923076906" y="146.0" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.view.drawstyledialogs.LineWidthSlider">
-      <point x="-35.63636363636351" y="-24.5" />
-      <point x="1006.0402188687723" y="2698.0" />
-      <point x="987.0061279596813" y="2698.0" />
+      <point x="-37.09090909090912" y="-24.5" />
+      <point x="963.4398601398602" y="2738.0" />
+      <point x="923.6898601398602" y="2738.0" />
       <point x="35.25" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.view.drawer.DrawItemDrawer">
-      <point x="-82.04166666666652" y="-35.5" />
-      <point x="1115.552697805067" y="1400.0" />
-      <point x="363.0" y="1400.0" />
+      <point x="85.70833333333326" y="-35.5" />
+      <point x="1661.3729727523582" y="1430.0" />
+      <point x="2377.188257575758" y="1430.0" />
       <point x="0.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.SlideItem" target="jabberpoint.presentation.style.Style">
       <point x="0.0" y="-35.5" />
-      <point x="1726.5745257257097" y="323.0" />
-      <point x="1697.0745257257097" y="323.0" />
-      <point x="1697.0745257257097" y="212.0" />
-      <point x="1702.157859059043" y="212.0" />
-      <point x="10.583333333333258" y="91.0" />
+      <point x="829.8884215111486" y="333.0" />
+      <point x="800.1384215111486" y="333.0" />
+      <point x="800.1384215111486" y="212.0" />
+      <point x="838.8884215111489" y="212.0" />
+      <point x="-31.75" y="91.0" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.file.Accessor">
-      <point x="-69.0" y="-46.5" />
-      <point x="2478.180253833807" y="2383.0" />
-      <point x="2360.227872881426" y="2383.0" />
-      <point x="87.85714285714266" y="57.5" />
-    </edge>
-    <edge source="jabberpoint.view.SlideViewerComponent" target="jabberpoint.view.drawer.DrawerFactory">
-      <point x="-66.0" y="-47.0" />
-      <point x="1774.58546706526" y="1521.0" />
-      <point x="1197.5943644717336" y="1521.0" />
-      <point x="0.0" y="35.5" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.presentation.Slide">
-      <point x="110.79999999999995" y="-46.5" />
-      <point x="1851.1" y="1153.0" />
-      <point x="1922.6860311384003" y="1153.0" />
-      <point x="-48.70833333333326" y="80.0" />
+      <point x="99.11111111111109" y="-46.5" />
+      <point x="286.66111111111127" y="2443.0" />
+      <point x="498.2093406593408" y="2443.0" />
+      <point x="-58.571428571428555" y="57.5" />
     </edge>
     <edge source="jabberpoint.presentation.Presentation" target="jabberpoint.view.SlideViewerComponent">
-      <point x="-49.75" y="-146.0" />
-      <point x="1842.58546706526" y="1665.0" />
-      <point x="1857.08546706526" y="1665.0" />
-      <point x="16.5" y="47.0" />
+      <point x="-16.58333333333337" y="-146.0" />
+      <point x="903.2598599812903" y="1695.0" />
+      <point x="889.1765266479571" y="1695.0" />
+      <point x="-82.5" y="47.0" />
+    </edge>
+    <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.presentation.Slide">
+      <point x="-114.0" y="-46.5" />
+      <point x="966.6882575757577" y="1153.0" />
+      <point x="727.9382575757577" y="1153.0" />
+      <point x="51.04166666666674" y="80.0" />
     </edge>
     <edge source="jabberpoint.file.AccessorFactory" target="jabberpoint.demo.DemoPresentation">
-      <point x="-67.875" y="-35.5" />
-      <point x="2252.557826010195" y="2546.0" />
-      <point x="2030.21046706526" y="2546.0" />
+      <point x="-23.625" y="-35.5" />
+      <point x="328.1750000000002" y="2576.0" />
+      <point x="421.5500000000002" y="2576.0" />
+      <point x="0.0" y="35.5" />
+    </edge>
+    <edge source="jabberpoint.view.SlideViewerComponent" target="jabberpoint.view.drawer.DrawerFactory">
+      <point x="66.0" y="-47.0" />
+      <point x="1037.676526647957" y="1551.0" />
+      <point x="1575.664639419025" y="1551.0" />
       <point x="0.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.presentation.Presentation">
-      <point x="17.818181818181756" y="-24.5" />
-      <point x="1059.4947643233177" y="2688.0" />
-      <point x="1703.404523009316" y="2688.0" />
-      <point x="1703.404523009316" y="2057.0" />
-      <point x="1861.7200824498755" y="2057.0" />
-      <point x="-30.615384615384528" y="146.0" />
+      <point x="55.63636363636374" y="-24.5" />
+      <point x="1056.1671328671332" y="2748.0" />
+      <point x="1271.4398601398602" y="2748.0" />
+      <point x="1271.4398601398602" y="2077.0" />
+      <point x="935.1508856223161" y="2077.0" />
+      <point x="15.307692307692378" y="146.0" />
     </edge>
     <edge source="jabberpoint.presentation.Line" target="jabberpoint.presentation.style.LineStyle">
       <point x="-23.25" y="-68.5" />
-      <point x="11.375" y="35.5" />
+      <point x="2307.354924242424" y="333.0" />
+      <point x="2375.6800881778154" y="333.0" />
+      <point x="-37.125" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.view.drawer.Drawer">
-      <point x="-110.79999999999995" y="-46.5" />
-      <point x="1629.5" y="1123.0" />
-      <point x="1072.75" y="1123.0" />
-      <point x="136.0" y="35.5" />
+      <point x="114.0" y="-46.5" />
+      <point x="1194.6882575757577" y="1193.0" />
+      <point x="1649.9882575757576" y="1193.0" />
+      <point x="-139.20000000000005" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.presentation.style.Style">
-      <point x="-68.0" y="-68.5" />
-      <point x="1254.7999999999997" y="1173.0" />
-      <point x="1239.8563003985932" y="1173.0" />
-      <point x="1239.8563003985932" y="212.0" />
-      <point x="1659.8245257257097" y="212.0" />
-      <point x="-31.75" y="91.0" />
+      <point x="68.0" y="-68.5" />
+      <point x="1481.1882575757577" y="1173.0" />
+      <point x="1395.6882575757577" y="1173.0" />
+      <point x="1395.6882575757577" y="212.0" />
+      <point x="902.3884215111489" y="212.0" />
+      <point x="31.75" y="91.0" />
     </edge>
     <edge source="jabberpoint.view.controller.DrawController" target="jabberpoint.presentation.Line">
-      <point x="-39.0" y="-113.0" />
-      <point x="119.5" y="2007.0" />
-      <point x="126.3125" y="2007.0" />
-      <point x="126.3125" y="560.0" />
-      <point x="327.4396337319266" y="560.0" />
-      <point x="-34.875" y="68.5" />
+      <point x="39.0" y="-113.0" />
+      <point x="2628.188257575758" y="2067.0" />
+      <point x="2590.688257575758" y="2067.0" />
+      <point x="2590.688257575758" y="550.0" />
+      <point x="2365.479924242424" y="550.0" />
+      <point x="34.875" y="68.5" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.slideitem.ItemFactory">
-      <point x="23.0" y="-46.5" />
-      <point x="2570.180253833807" y="2403.0" />
-      <point x="2558.7733893620734" y="2403.0" />
-      <point x="2558.7733893620734" y="903.0" />
-      <point x="1702.7999999999997" y="903.0" />
-      <point x="81.0" y="24.5" />
-    </edge>
-    <edge source="jabberpoint.demo.DemoPresentation" target="jabberpoint.presentation.slideitem.BitmapItem">
-      <point x="41.0" y="-35.5" />
-      <point x="2071.2104670652598" y="2373.0" />
-      <point x="2159.370730024283" y="2373.0" />
-      <point x="2159.370730024283" y="724.0" />
-      <point x="1409.2563003985933" y="724.0" />
-      <point x="44.5" y="47.0" />
+      <point x="-24.77777777777783" y="-46.5" />
+      <point x="162.77222222222235" y="2413.0" />
+      <point x="52.041830602057644" y="2413.0" />
+      <point x="52.041830602057644" y="893.0" />
+      <point x="597.2384215111487" y="893.0" />
+      <point x="-86.39999999999998" y="24.5" />
     </edge>
     <edge source="jabberpoint.JabberPoint" target="jabberpoint.presentation.Presentation">
-      <point x="-15.875" y="-24.5" />
-      <point x="949.1765825051358" y="2916.0" />
-      <point x="11.0" y="2916.0" />
-      <point x="11.0" y="2403.0" />
-      <point x="1692.404523009316" y="2403.0" />
-      <point x="1692.404523009316" y="2047.0" />
-      <point x="1846.412390142183" y="2047.0" />
-      <point x="-45.923076923076906" y="146.0" />
+      <point x="16.875" y="-24.5" />
+      <point x="462.3216907010765" y="2976.0" />
+      <point x="782.7807692307694" y="2976.0" />
+      <point x="782.7807692307694" y="2087.0" />
+      <point x="904.5355010069314" y="2087.0" />
+      <point x="-15.307692307692264" y="146.0" />
     </edge>
     <edge source="jabberpoint.demo.DemoPresentation" target="jabberpoint.file.Accessor">
       <point x="82.0" y="-35.5" />
-      <point x="2112.2104670652598" y="2383.0" />
-      <point x="2184.5135871671405" y="2383.0" />
-      <point x="-87.85714285714266" y="57.5" />
+      <point x="503.5500000000002" y="2443.0" />
+      <point x="527.4950549450551" y="2443.0" />
+      <point x="-29.28571428571422" y="57.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.slideitem.BitmapItem">
-      <point x="-7.4583333333332575" y="-35.5" />
-      <point x="1190.1360311384003" y="1350.0" />
-      <point x="1117.25" y="1350.0" />
-      <point x="1117.25" y="784.0" />
-      <point x="1349.92296706526" y="784.0" />
-      <point x="-14.833333333333258" y="47.0" />
+      <point x="7.7916666666667425" y="-35.5" />
+      <point x="1583.4563060856917" y="1430.0" />
+      <point x="1593.6882575757577" y="1430.0" />
+      <point x="1593.6882575757577" y="714.0" />
+      <point x="1183.8884215111486" y="714.0" />
+      <point x="0.0" y="47.0" />
     </edge>
     <edge source="jabberpoint.view.controller.DrawController" target="jabberpoint.presentation.slideitem.ItemFactory">
-      <point x="39.0" y="-113.0" />
-      <point x="197.5" y="2007.0" />
-      <point x="182.5" y="2007.0" />
-      <point x="182.5" y="913.0" />
-      <point x="1540.7999999999997" y="913.0" />
-      <point x="-81.0" y="24.5" />
+      <point x="-39.0" y="-113.0" />
+      <point x="2550.188257575758" y="2087.0" />
+      <point x="2557.688257575758" y="2087.0" />
+      <point x="2557.688257575758" y="883.0" />
+      <point x="770.0384215111486" y="883.0" />
+      <point x="86.39999999999998" y="24.5" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.Presentation">
-      <point x="-46.0" y="-46.5" />
-      <point x="2501.180253833807" y="2393.0" />
-      <point x="2520.8116758241754" y="2393.0" />
-      <point x="2520.8116758241754" y="2037.0" />
-      <point x="1968.8739286037217" y="2037.0" />
-      <point x="76.53846153846166" y="146.0" />
+      <point x="49.55555555555554" y="-46.5" />
+      <point x="237.10555555555572" y="2423.0" />
+      <point x="413.78076923076935" y="2423.0" />
+      <point x="413.78076923076935" y="2047.0" />
+      <point x="843.3047317761622" y="2047.0" />
+      <point x="-76.53846153846155" y="146.0" />
     </edge>
     <edge source="jabberpoint.view.SlideViewerFrame" target="jabberpoint.view.controller.MenuController">
-      <point x="0.0" y="-24.5" />
+      <point x="-135.20000000000005" y="-24.5" />
+      <point x="1184.7899599318457" y="2887.0" />
+      <point x="1000.5307692307695" y="2887.0" />
       <point x="0.0" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.controller.DrawController" target="jabberpoint.presentation.slideitem.DrawItem">
       <point x="13.0" y="-113.0" />
-      <point x="171.5" y="794.0" />
-      <point x="375.1479670652601" y="794.0" />
-      <point x="-31.25" y="36.0" />
+      <point x="2602.188257575758" y="2077.0" />
+      <point x="2579.688257575758" y="2077.0" />
+      <point x="2579.688257575758" y="754.0" />
+      <point x="2338.6049242424247" y="754.0" />
+      <point x="52.083333333333485" y="36.0" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.ItemFactory" target="jabberpoint.presentation.slideitem.TextItem">
-      <point x="27.0" y="-24.5" />
-      <point x="1648.7999999999997" y="734.0" />
-      <point x="1551.4563003985934" y="734.0" />
-      <point x="22.200000000000045" y="36.0" />
-    </edge>
-    <edge source="jabberpoint.presentation.slideitem.ItemFactory" target="jabberpoint.presentation.slideitem.DrawItem">
-      <point x="-81.0" y="-24.5" />
-      <point x="1540.7999999999997" y="754.0" />
-      <point x="458.4813003985935" y="754.0" />
-      <point x="52.083333333333314" y="36.0" />
+      <point x="-27.0" y="-24.5" />
+      <point x="656.6384215111486" y="744.0" />
+      <point x="779.9384215111486" y="744.0" />
+      <point x="-22.200000000000045" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.BitmapItemDrawer" target="jabberpoint.presentation.slideitem.BitmapItem">
-      <point x="42.5" y="-35.5" />
-      <point x="777.4999999999999" y="1163.0" />
-      <point x="745.6063003985934" y="1163.0" />
-      <point x="745.6063003985934" y="774.0" />
-      <point x="1320.2563003985933" y="774.0" />
-      <point x="-44.5" y="47.0" />
+      <point x="-42.50000000000023" y="-35.5" />
+      <point x="1973.688257575758" y="704.0" />
+      <point x="1219.4884215111485" y="704.0" />
+      <point x="35.59999999999991" y="47.0" />
+    </edge>
+    <edge source="jabberpoint.presentation.slideitem.ItemFactory" target="jabberpoint.presentation.slideitem.DrawItem">
+      <point x="81.0" y="-24.5" />
+      <point x="764.6384215111486" y="774.0" />
+      <point x="2234.4382575757577" y="774.0" />
+      <point x="-52.083333333333485" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.controller.DrawController" target="jabberpoint.presentation.style.LineStyle">
-      <point x="-65.0" y="-113.0" />
-      <point x="93.5" y="2007.0" />
-      <point x="109.75" y="2007.0" />
-      <point x="109.75" y="333.0" />
-      <point x="316.08702572570974" y="333.0" />
-      <point x="-11.375" y="35.5" />
+      <point x="65.0" y="-113.0" />
+      <point x="2654.188257575758" y="2057.0" />
+      <point x="2601.688257575758" y="2057.0" />
+      <point x="2601.688257575758" y="343.0" />
+      <point x="2425.1800881778154" y="343.0" />
+      <point x="12.375" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.view.controller.DrawController">
-      <point x="-71.27272727272725" y="-24.5" />
-      <point x="970.4038552324085" y="2718.0" />
-      <point x="870.7561279596813" y="2718.0" />
-      <point x="870.7561279596813" y="2383.0" />
-      <point x="210.5" y="2383.0" />
-      <point x="52.0" y="113.0" />
+      <point x="74.18181818181824" y="-24.5" />
+      <point x="1074.7125874125877" y="2758.0" />
+      <point x="1282.4398601398602" y="2758.0" />
+      <point x="1282.4398601398602" y="2433.0" />
+      <point x="2537.188257575758" y="2433.0" />
+      <point x="-52.0" y="113.0" />
     </edge>
     <edge source="jabberpoint.demo.DemoPresentation" target="jabberpoint.presentation.Presentation">
-      <point x="-82.0" y="-35.5" />
-      <point x="1948.21046706526" y="2343.0" />
-      <point x="1989.0181593729524" y="2343.0" />
-      <point x="1989.0181593729524" y="2067.0" />
-      <point x="1922.9508516806447" y="2067.0" />
-      <point x="30.615384615384755" y="146.0" />
+      <point x="41.0" y="-35.5" />
+      <point x="462.5500000000002" y="2353.0" />
+      <point x="424.78076923076935" y="2353.0" />
+      <point x="424.78076923076935" y="2057.0" />
+      <point x="858.6124240838544" y="2057.0" />
+      <point x="-61.23076923076928" y="146.0" />
     </edge>
     <edge source="jabberpoint.presentation.style.StyleFactory" target="jabberpoint.presentation.style.Style">
-      <point x="29.75" y="-24.5" />
-      <point x="1796.8245257257097" y="212.0" />
-      <point x="1744.4911923923764" y="212.0" />
-      <point x="52.91666666666674" y="91.0" />
+      <point x="30.0" y="-24.5" />
+      <point x="900.6384215111486" y="222.0" />
+      <point x="881.2217548444821" y="222.0" />
+      <point x="10.583333333333371" y="91.0" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.DrawItem" target="jabberpoint.presentation.Line">
       <point x="0.0" y="-36.0" />
-      <point x="406.3979670652601" y="570.0" />
-      <point x="397.1896337319266" y="570.0" />
-      <point x="34.875" y="68.5" />
+      <point x="2286.521590909091" y="560.0" />
+      <point x="2295.729924242424" y="560.0" />
+      <point x="-34.875" y="68.5" />
     </edge>
     <edge source="jabberpoint.view.controller.KeyController" target="jabberpoint.presentation.Presentation">
-      <point x="41.75" y="-24.5" />
-      <point x="1923.2681593729524" y="2077.0" />
-      <point x="1907.6431593729524" y="2077.0" />
-      <point x="15.307692307692378" y="146.0" />
+      <point x="-43.75" y="-24.5" />
+      <point x="1325.6898601398602" y="2067.0" />
+      <point x="950.4585779300083" y="2067.0" />
+      <point x="30.61538461538464" y="146.0" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.ItemFactory" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="81.0" y="-24.5" />
-      <point x="1702.7999999999997" y="814.0" />
-      <point x="1681.7199367622297" y="814.0" />
-      <point x="1681.7199367622297" y="570.0" />
-      <point x="1734.847252998437" y="570.0" />
-      <point x="8.272727272727252" y="35.5" />
+      <point x="-81.0" y="-24.5" />
+      <point x="602.6384215111486" y="550.0" />
+      <point x="811.8884215111486" y="550.0" />
+      <point x="-18.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.slideitem.TextItem">
-      <point x="22.375" y="-35.5" />
-      <point x="1219.9693644717336" y="1360.0" />
-      <point x="1503.2999999999997" y="1360.0" />
-      <point x="1503.2999999999997" y="814.0" />
-      <point x="1529.2563003985933" y="814.0" />
+      <point x="-70.125" y="-35.5" />
+      <point x="1505.539639419025" y="1420.0" />
+      <point x="927.6882575757577" y="1420.0" />
+      <point x="927.6882575757577" y="744.0" />
+      <point x="802.1384215111486" y="744.0" />
       <point x="0.0" y="36.0" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.DrawItem" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="41.666666666666686" y="-36.0" />
-      <point x="448.06463373192673" y="510.0" />
-      <point x="1685.2108893620734" y="510.0" />
-      <point x="-41.36363636363626" y="35.5" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.view.drawer.Drawer">
-      <point x="-136.0" y="-68.5" />
-      <point x="1186.7999999999997" y="1173.0" />
-      <point x="1004.7499999999999" y="1173.0" />
-      <point x="68.0" y="35.5" />
+      <point x="-41.666666666666515" y="-36.0" />
+      <point x="2244.8549242424247" y="520.0" />
+      <point x="874.8884215111486" y="520.0" />
+      <point x="45.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.JabberPoint" target="jabberpoint.file.AccessorFactory">
-      <point x="47.625" y="-24.5" />
-      <point x="1012.6765825051358" y="2926.0" />
-      <point x="2677.0233893620734" y="2926.0" />
-      <point x="2677.0233893620734" y="2728.0" />
-      <point x="2365.682826010195" y="2728.0" />
-      <point x="45.250000000000114" y="35.5" />
+      <point x="-16.875" y="-24.5" />
+      <point x="428.5716907010765" y="2976.0" />
+      <point x="304.5500000000002" y="2976.0" />
+      <point x="-47.25" y="35.5" />
+    </edge>
+    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.view.drawer.Drawer">
+      <point x="136.0" y="-68.5" />
+      <point x="1549.1882575757577" y="1203.0" />
+      <point x="1719.5882575757578" y="1203.0" />
+      <point x="-69.59999999999991" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.file.Accessor">
-      <point x="71.27272727272748" y="-24.5" />
-      <point x="1112.9493097778632" y="2718.0" />
-      <point x="1857.404523009316" y="2718.0" />
-      <point x="1857.404523009316" y="2556.0" />
-      <point x="2143.2104670652598" y="2556.0" />
-      <point x="2143.2104670652598" y="2393.0" />
-      <point x="2213.7993014528547" y="2393.0" />
-      <point x="-58.57142857142844" y="57.5" />
-    </edge>
-    <edge source="jabberpoint.file.AccessorFactory" target="jabberpoint.file.XMLAccessor">
-      <point x="67.875" y="-35.5" />
-      <point x="2388.307826010195" y="2556.0" />
-      <point x="2547.180253833807" y="2556.0" />
-      <point x="0.0" y="46.5" />
+      <point x="-74.18181818181824" y="-24.5" />
+      <point x="926.3489510489512" y="2758.0" />
+      <point x="807.4398601398602" y="2758.0" />
+      <point x="807.4398601398602" y="2433.0" />
+      <point x="644.6379120879122" y="2433.0" />
+      <point x="87.85714285714289" y="57.5" />
     </edge>
     <edge source="jabberpoint.presentation.Slide" target="jabberpoint.presentation.slideitem.SlideItem">
       <point x="0.0" y="-80.0" />
-      <point x="1971.3943644717338" y="913.0" />
-      <point x="1983.2938003985935" y="913.0" />
-      <point x="1983.2938003985935" y="570.0" />
-      <point x="1751.3927075438914" y="570.0" />
-      <point x="24.818181818181756" y="35.5" />
+      <point x="676.896590909091" y="873.0" />
+      <point x="565.1384215111485" y="873.0" />
+      <point x="565.1384215111485" y="540.0" />
+      <point x="802.8884215111486" y="540.0" />
+      <point x="-27.0" y="35.5" />
+    </edge>
+    <edge source="jabberpoint.file.AccessorFactory" target="jabberpoint.file.XMLAccessor">
+      <point x="-70.875" y="-35.5" />
+      <point x="280.9250000000002" y="2596.0" />
+      <point x="187.55000000000018" y="2596.0" />
+      <point x="0.0" y="46.5" />
     </edge>
     <edge source="jabberpoint.file.AccessorFactory" target="jabberpoint.file.Accessor">
-      <point x="-22.625" y="-35.5" />
-      <point x="2297.807826010195" y="2536.0" />
-      <point x="2154.2104670652598" y="2536.0" />
-      <point x="2154.2104670652598" y="2403.0" />
-      <point x="2243.085015738569" y="2403.0" />
-      <point x="-29.28571428571422" y="57.5" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.Slide">
-      <point x="82.04166666666674" y="-35.5" />
-      <point x="1279.6360311384003" y="1400.0" />
-      <point x="1889.2999999999997" y="1400.0" />
-      <point x="1889.2999999999997" y="1163.0" />
-      <point x="1936.6026978050668" y="1163.0" />
-      <point x="-34.79166666666674" y="80.0" />
+      <point x="23.625" y="-35.5" />
+      <point x="375.4250000000002" y="2586.0" />
+      <point x="556.7807692307694" y="2586.0" />
+      <point x="0.0" y="57.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.view.drawer.BitmapItemDrawer">
-      <point x="-37.29166666666674" y="-35.5" />
-      <point x="1160.3026978050668" y="1370.0" />
-      <point x="734.9999999999999" y="1370.0" />
+      <point x="54.54166666666674" y="-35.5" />
+      <point x="1630.2063060856917" y="1410.0" />
+      <point x="2016.188257575758" y="1410.0" />
       <point x="0.0" y="35.5" />
     </edge>
-    <edge source="jabberpoint.view.SlideViewerFrame" target="jabberpoint.presentation.Presentation">
-      <point x="132.0" y="-24.5" />
-      <point x="1174.4265825051357" y="2827.0" />
-      <point x="2661.180253833807" y="2827.0" />
-      <point x="2661.180253833807" y="2027.0" />
-      <point x="1984.1816209114138" y="2027.0" />
-      <point x="91.84615384615381" y="146.0" />
+    <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.Slide">
+      <point x="-85.70833333333348" y="-35.5" />
+      <point x="1489.9563060856915" y="1430.0" />
+      <point x="860.1049242424242" y="1430.0" />
+      <point x="860.1049242424242" y="1163.0" />
+      <point x="713.3549242424243" y="1163.0" />
+      <point x="36.45833333333337" y="80.0" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="92.0" y="-46.5" />
-      <point x="2639.180253833807" y="2373.0" />
-      <point x="2591.7733893620734" y="2373.0" />
-      <point x="2591.7733893620734" y="550.0" />
-      <point x="1767.9381620893462" y="550.0" />
-      <point x="41.36363636363649" y="35.5" />
+      <point x="-99.11111111111109" y="-46.5" />
+      <point x="88.4388888888891" y="2443.0" />
+      <point x="0.0" y="2443.0" />
+      <point x="0.0" y="520.0" />
+      <point x="784.8884215111486" y="520.0" />
+      <point x="-45.0" y="35.5" />
+    </edge>
+    <edge source="jabberpoint.view.SlideViewerFrame" target="jabberpoint.presentation.Presentation">
+      <point x="0.0" y="-24.5" />
+      <point x="1319.9899599318458" y="2867.0" />
+      <point x="1467.4398601398602" y="2867.0" />
+      <point x="1467.4398601398602" y="2047.0" />
+      <point x="981.073962545393" y="2047.0" />
+      <point x="61.23076923076928" y="146.0" />
+    </edge>
+    <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.slideitem.SlideItem">
+      <point x="23.375" y="-35.5" />
+      <point x="1599.039639419025" y="1430.0" />
+      <point x="1604.6882575757577" y="1430.0" />
+      <point x="1604.6882575757577" y="530.0" />
+      <point x="865.8884215111486" y="530.0" />
+      <point x="36.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.demo.DemoPresentation" target="jabberpoint.presentation.Slide">
       <point x="0.0" y="-35.5" />
-      <point x="2030.21046706526" y="2363.0" />
-      <point x="2087.12755602874" y="2363.0" />
-      <point x="2087.12755602874" y="1143.0" />
-      <point x="2020.1026978050668" y="1143.0" />
-      <point x="48.70833333333326" y="80.0" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="-52.20833333333326" y="-35.5" />
-      <point x="1145.3860311384003" y="1380.0" />
-      <point x="554.4999999999999" y="1380.0" />
-      <point x="554.4999999999999" y="520.0" />
-      <point x="1693.4836166348007" y="520.0" />
-      <point x="-33.09090909090901" y="35.5" />
+      <point x="421.5500000000002" y="2363.0" />
+      <point x="263.68766393539113" y="2363.0" />
+      <point x="263.68766393539113" y="1203.0" />
+      <point x="640.4382575757576" y="1203.0" />
+      <point x="-36.45833333333337" y="80.0" />
     </edge>
     <edge source="jabberpoint.view.SlideViewerComponent" target="jabberpoint.presentation.Slide">
-      <point x="66.0" y="-47.0" />
-      <point x="1906.58546706526" y="1521.0" />
-      <point x="1967.3526978050668" y="1521.0" />
-      <point x="1967.3526978050668" y="1173.0" />
-      <point x="1964.4360311384003" y="1173.0" />
-      <point x="-6.9583333333332575" y="80.0" />
+      <point x="0.0" y="-47.0" />
+      <point x="971.6765266479571" y="1541.0" />
+      <point x="845.459090909091" y="1541.0" />
+      <point x="845.459090909091" y="1173.0" />
+      <point x="698.771590909091" y="1173.0" />
+      <point x="21.875" y="80.0" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.SlideItem" target="jabberpoint.presentation.style.StyleFactory">
-      <point x="30.333333333333258" y="-35.5" />
-      <point x="1756.907859059043" y="333.0" />
-      <point x="1767.0745257257097" y="333.0" />
+      <point x="33.0" y="-35.5" />
+      <point x="862.8884215111486" y="343.0" />
+      <point x="870.6384215111486" y="343.0" />
       <point x="0.0" y="24.5" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.ItemFactory" target="jabberpoint.presentation.slideitem.BitmapItem">
-      <point x="-27.0" y="-24.5" />
-      <point x="1594.7999999999997" y="744.0" />
-      <point x="1379.5896337319266" y="744.0" />
-      <point x="14.833333333333258" y="47.0" />
+      <point x="27.0" y="-24.5" />
+      <point x="710.6384215111486" y="764.0" />
+      <point x="1148.2884215111487" y="764.0" />
+      <point x="-35.59999999999991" y="47.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawItemDrawer" target="jabberpoint.view.drawer.Drawer">
-      <point x="127.5" y="-35.5" />
-      <point x="490.5" y="1173.0" />
-      <point x="800.7499999999999" y="1173.0" />
-      <point x="-136.0" y="35.5" />
+      <point x="-127.5" y="-35.5" />
+      <point x="2249.688257575758" y="1183.0" />
+      <point x="1928.3882575757577" y="1183.0" />
+      <point x="139.20000000000005" y="35.5" />
     </edge>
     <edge source="jabberpoint.file.JSONAccessor" target="jabberpoint.file.Accessor">
       <point x="0.0" y="-35.5" />
-      <point x="2321.180253833807" y="2403.0" />
-      <point x="2301.6564443099974" y="2403.0" />
-      <point x="29.28571428571422" y="57.5" />
+      <point x="669.7807692307694" y="2443.0" />
+      <point x="615.3521978021979" y="2443.0" />
+      <point x="58.571428571428555" y="57.5" />
     </edge>
     <edge source="jabberpoint.view.controller.DrawController" target="jabberpoint.presentation.Presentation">
-      <point x="91.0" y="-113.0" />
-      <point x="249.5" y="2037.0" />
-      <point x="1831.1046978344907" y="2037.0" />
-      <point x="-61.23076923076928" y="146.0" />
+      <point x="-91.0" y="-113.0" />
+      <point x="2498.188257575758" y="2037.0" />
+      <point x="996.3816548530854" y="2037.0" />
+      <point x="76.53846153846166" y="146.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.view.drawer.TextItemDrawer">
-      <point x="7.4583333333332575" y="-35.5" />
-      <point x="1205.0526978050668" y="1350.0" />
-      <point x="1322.7999999999997" y="1350.0" />
+      <point x="-7.7916666666667425" y="-35.5" />
+      <point x="1567.8729727523582" y="1380.0" />
+      <point x="1413.1882575757577" y="1380.0" />
       <point x="0.0" y="68.5" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.Slide">
       <point x="0.0" y="-46.5" />
-      <point x="2547.7733893620734" y="1123.0" />
-      <point x="2047.9360311384003" y="1123.0" />
-      <point x="76.54166666666652" y="80.0" />
+      <point x="187.55000000000018" y="2403.0" />
+      <point x="129.54183060205764" y="2403.0" />
+      <point x="129.54183060205764" y="1173.0" />
+      <point x="596.6882575757576" y="1173.0" />
+      <point x="-80.20833333333337" y="80.0" />
     </edge>
     <edge source="jabberpoint.view.SlideViewerFrame" target="jabberpoint.view.controller.KeyController">
-      <point x="66.0" y="-24.5" />
-      <point x="1108.4265825051357" y="2817.0" />
-      <point x="1881.5181593729524" y="2817.0" />
+      <point x="-67.59999999999991" y="-24.5" />
+      <point x="1252.3899599318459" y="2857.0" />
+      <point x="1369.4398601398602" y="2857.0" />
       <point x="0.0" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.presentation.slideitem.DrawItem">
-      <point x="-67.125" y="-35.5" />
-      <point x="1130.4693644717336" y="1390.0" />
-      <point x="543.4999999999999" y="1390.0" />
-      <point x="543.4999999999999" y="814.0" />
-      <point x="437.6479670652601" y="814.0" />
-      <point x="31.25" y="36.0" />
+      <point x="70.125" y="-35.5" />
+      <point x="1645.789639419025" y="1420.0" />
+      <point x="2196.688257575758" y="1420.0" />
+      <point x="2196.688257575758" y="784.0" />
+      <point x="2255.271590909091" y="784.0" />
+      <point x="-31.25" y="36.0" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.slideitem.TextItem">
-      <point x="69.0" y="-46.5" />
-      <point x="2616.180253833807" y="2383.0" />
-      <point x="2580.7733893620734" y="2383.0" />
-      <point x="2580.7733893620734" y="704.0" />
-      <point x="1573.6563003985934" y="704.0" />
-      <point x="44.40000000000009" y="36.0" />
+      <point x="-74.33333333333326" y="-46.5" />
+      <point x="113.21666666666692" y="2433.0" />
+      <point x="11.0" y="2433.0" />
+      <point x="11.0" y="734.0" />
+      <point x="757.7384215111488" y="734.0" />
+      <point x="-44.39999999999998" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.BitmapItemDrawer" target="jabberpoint.view.drawer.Drawer">
-      <point x="127.5" y="-35.5" />
-      <point x="862.4999999999999" y="1173.0" />
-      <point x="868.7499999999999" y="1173.0" />
-      <point x="-68.0" y="35.5" />
+      <point x="-127.50000000000023" y="-35.5" />
+      <point x="1888.6882575757577" y="1203.0" />
+      <point x="1858.7882575757576" y="1203.0" />
+      <point x="69.59999999999991" y="35.5" />
     </edge>
     <edge source="jabberpoint.presentation.slideitem.TextItem" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="-27.75" y="-36.0" />
-      <point x="1501.5063003985933" y="550.0" />
-      <point x="1718.3017984529824" y="550.0" />
-      <point x="-8.272727272727252" y="35.5" />
+      <point x="27.75" y="-36.0" />
+      <point x="0.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.JabberPoint" target="jabberpoint.view.SlideViewerFrame">
-      <point x="15.875" y="-24.5" />
-      <point x="980.9265825051358" y="2916.0" />
-      <point x="1042.4265825051357" y="2916.0" />
+      <point x="50.625" y="-24.5" />
+      <point x="496.0716907010765" y="2986.0" />
+      <point x="1319.9899599318458" y="2986.0" />
       <point x="0.0" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.presentation.slideitem.ItemFactory">
-      <point x="-55.40000000000009" y="-46.5" />
-      <point x="1684.8999999999996" y="1113.0" />
-      <point x="1594.7999999999997" y="1113.0" />
-      <point x="-27.0" y="24.5" />
+      <point x="0.0" y="-46.5" />
+      <point x="1080.6882575757577" y="1133.0" />
+      <point x="774.896590909091" y="1133.0" />
+      <point x="774.896590909091" y="893.0" />
+      <point x="726.8384215111486" y="893.0" />
+      <point x="43.19999999999993" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.SlideViewerComponent" target="jabberpoint.presentation.Presentation">
-      <point x="82.5" y="47.0" />
-      <point x="1923.08546706526" y="1665.0" />
-      <point x="1908.9188003985932" y="1665.0" />
-      <point x="16.583333333333258" y="-146.0" />
+      <point x="16.5" y="47.0" />
+      <point x="988.1765266479571" y="1695.0" />
+      <point x="1002.7598599812904" y="1695.0" />
+      <point x="82.91666666666674" y="-146.0" />
+    </edge>
+    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.presentation.slideitem.TextItem">
+      <point x="0.0" y="-68.5" />
+      <point x="1413.1882575757577" y="1183.0" />
+      <point x="1384.6882575757577" y="1183.0" />
+      <point x="1384.6882575757577" y="724.0" />
+      <point x="846.5384215111487" y="724.0" />
+      <point x="44.39999999999998" y="36.0" />
     </edge>
     <edge source="jabberpoint.file.JSONAccessor" target="jabberpoint.presentation.Presentation">
       <point x="68.33333333333337" y="-35.5" />
-      <point x="2389.5135871671405" y="2403.0" />
-      <point x="2440.0135871671405" y="2403.0" />
-      <point x="2440.0135871671405" y="2047.0" />
-      <point x="1953.5662362960293" y="2047.0" />
-      <point x="61.23076923076928" y="146.0" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.presentation.slideitem.TextItem">
-      <point x="68.0" y="-68.5" />
-      <point x="1390.7999999999997" y="1173.0" />
-      <point x="1405.8563003985932" y="1173.0" />
-      <point x="1405.8563003985932" y="804.0" />
-      <point x="1507.0563003985933" y="804.0" />
-      <point x="-22.200000000000045" y="36.0" />
+      <point x="738.1141025641027" y="2443.0" />
+      <point x="703.947435897436" y="2443.0" />
+      <point x="703.947435897436" y="2077.0" />
+      <point x="889.2278086992391" y="2077.0" />
+      <point x="-30.61538461538464" y="146.0" />
     </edge>
     <edge source="jabberpoint.file.XMLAccessor" target="jabberpoint.presentation.slideitem.BitmapItem">
-      <point x="46.0" y="-46.5" />
-      <point x="2593.180253833807" y="2393.0" />
-      <point x="2569.7733893620734" y="2393.0" />
-      <point x="2569.7733893620734" y="714.0" />
-      <point x="1438.92296706526" y="714.0" />
-      <point x="74.16666666666674" y="47.0" />
+      <point x="-49.55555555555566" y="-46.5" />
+      <point x="137.99444444444453" y="2423.0" />
+      <point x="22.0" y="2423.0" />
+      <point x="22.0" y="754.0" />
+      <point x="1112.6884215111486" y="754.0" />
+      <point x="-71.20000000000005" y="47.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.BitmapItemDrawer" target="jabberpoint.presentation.style.Style">
-      <point x="-127.5" y="-35.5" />
-      <point x="607.4999999999999" y="1153.0" />
-      <point x="723.6063003985934" y="1153.0" />
-      <point x="723.6063003985934" y="202.0" />
-      <point x="1638.657859059043" y="202.0" />
-      <point x="-52.91666666666674" y="91.0" />
+      <point x="127.49999999999977" y="-35.5" />
+      <point x="2143.6882575757577" y="1193.0" />
+      <point x="1995.688257575758" y="1193.0" />
+      <point x="1995.688257575758" y="202.0" />
+      <point x="923.5550881778154" y="202.0" />
+      <point x="52.91666666666663" y="91.0" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.file.AccessorFactory">
-      <point x="89.09090909090901" y="-24.5" />
-      <point x="1130.7674915960447" y="2728.0" />
-      <point x="2275.182826010195" y="2728.0" />
-      <point x="-45.25" y="35.5" />
+      <point x="-92.72727272727275" y="-24.5" />
+      <point x="907.8034965034967" y="2768.0" />
+      <point x="399.0500000000002" y="2768.0" />
+      <point x="47.25" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.controller.MenuController" target="jabberpoint.view.drawstyledialogs.ColorChooser">
-      <point x="0.0" y="-24.5" />
-      <point x="1041.6765825051357" y="2678.0" />
-      <point x="1134.5061279596812" y="2678.0" />
-      <point x="30.75" y="36.0" />
+      <point x="37.09090909090901" y="-24.5" />
+      <point x="1037.6216783216785" y="2738.0" />
+      <point x="1228.1898601398602" y="2738.0" />
+      <point x="32.75" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawItemDrawer" target="jabberpoint.presentation.slideitem.DrawItem">
-      <point x="42.5" y="-35.5" />
-      <point x="405.5" y="1173.0" />
-      <point x="368.4999999999999" y="1173.0" />
-      <point x="368.4999999999999" y="814.0" />
-      <point x="416.81463373192673" y="814.0" />
-      <point x="10.416666666666629" y="36.0" />
+      <point x="-42.5" y="-35.5" />
+      <point x="2334.688257575758" y="784.0" />
+      <point x="2276.1049242424247" y="784.0" />
+      <point x="-10.416666666666515" y="36.0" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.view.drawer.Drawer">
-      <point x="-22.375" y="-35.5" />
-      <point x="1175.2193644717336" y="1360.0" />
-      <point x="936.7499999999999" y="1360.0" />
+      <point x="38.95833333333326" y="-35.5" />
+      <point x="1614.6229727523582" y="1400.0" />
+      <point x="1789.1882575757577" y="1400.0" />
       <point x="0.0" y="35.5" />
     </edge>
     <edge source="jabberpoint.view.SlideViewerFrame" target="jabberpoint.view.SlideViewerComponent">
-      <point x="-132.0" y="-24.5" />
-      <point x="910.4265825051358" y="2827.0" />
-      <point x="22.0" y="2827.0" />
-      <point x="22.0" y="1655.0" />
-      <point x="1758.08546706526" y="1655.0" />
-      <point x="-82.5" y="47.0" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.presentation.slideitem.SlideItem">
-      <point x="0.0" y="-46.5" />
-      <point x="1740.2999999999997" y="570.0" />
-      <point x="1743.1199802711642" y="570.0" />
-      <point x="16.545454545454504" y="35.5" />
-    </edge>
-    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.presentation.Slide">
-      <point x="136.0" y="-68.5" />
-      <point x="1458.7999999999997" y="1133.0" />
-      <point x="1894.8526978050668" y="1133.0" />
-      <point x="-76.54166666666674" y="80.0" />
+      <point x="135.20000000000005" y="-24.5" />
+      <point x="1455.1899599318458" y="2887.0" />
+      <point x="2714.688257575758" y="2887.0" />
+      <point x="2714.688257575758" y="1685.0" />
+      <point x="1054.176526647957" y="1685.0" />
+      <point x="82.5" y="47.0" />
     </edge>
     <edge source="jabberpoint.file.AccessorFactory" target="jabberpoint.file.JSONAccessor">
-      <point x="22.625" y="-35.5" />
-      <point x="2343.057826010195" y="2556.0" />
-      <point x="2321.180253833807" y="2556.0" />
+      <point x="70.875" y="-35.5" />
+      <point x="422.6750000000002" y="2596.0" />
+      <point x="669.7807692307694" y="2596.0" />
       <point x="0.0" y="35.5" />
     </edge>
+    <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.presentation.slideitem.SlideItem">
+      <point x="57.0" y="-46.5" />
+      <point x="1137.6882575757577" y="1123.0" />
+      <point x="1038.1882575757577" y="1123.0" />
+      <point x="1038.1882575757577" y="560.0" />
+      <point x="838.8884215111486" y="560.0" />
+      <point x="9.0" y="35.5" />
+    </edge>
+    <edge source="jabberpoint.view.drawer.TextItemDrawer" target="jabberpoint.presentation.Slide">
+      <point x="-136.0" y="-68.5" />
+      <point x="1277.1882575757577" y="1113.0" />
+      <point x="757.1049242424243" y="1113.0" />
+      <point x="80.20833333333337" y="80.0" />
+    </edge>
     <edge source="jabberpoint.presentation.Presentation" target="jabberpoint.presentation.Slide">
-      <point x="49.75" y="-146.0" />
-      <point x="1942.08546706526" y="1655.0" />
-      <point x="2022.1026978050668" y="1655.0" />
-      <point x="2022.1026978050668" y="1173.0" />
-      <point x="1978.3526978050668" y="1173.0" />
-      <point x="6.9583333333332575" y="80.0" />
+      <point x="-82.91666666666663" y="-146.0" />
+      <point x="836.9265266479571" y="1695.0" />
+      <point x="730.2507575757577" y="1695.0" />
+      <point x="730.2507575757577" y="1203.0" />
+      <point x="655.021590909091" y="1203.0" />
+      <point x="-21.875" y="80.0" />
+    </edge>
+    <edge source="jabberpoint.demo.DemoPresentation" target="jabberpoint.presentation.slideitem.ItemFactory">
+      <point x="-82.0" y="-35.5" />
+      <point x="339.5500000000002" y="2383.0" />
+      <point x="216.54183060205764" y="2383.0" />
+      <point x="216.54183060205764" y="903.0" />
+      <point x="640.4384215111486" y="903.0" />
+      <point x="-43.200000000000045" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawerFactory" target="jabberpoint.view.drawer.SlideDrawer">
-      <point x="52.20833333333326" y="-35.5" />
-      <point x="1249.8026978050668" y="1380.0" />
-      <point x="1740.2999999999997" y="1380.0" />
-      <point x="0.0" y="46.5" />
+      <point x="-54.54166666666674" y="-35.5" />
+      <point x="1521.1229727523582" y="1410.0" />
+      <point x="985.6882575757577" y="1410.0" />
+      <point x="-95.0" y="46.5" />
     </edge>
     <edge source="jabberpoint.presentation.Slide" target="jabberpoint.presentation.slideitem.ItemFactory">
-      <point x="-55.66666666666674" y="-80.0" />
-      <point x="1915.7276978050668" y="913.0" />
-      <point x="1648.7999999999997" y="913.0" />
-      <point x="27.0" y="24.5" />
+      <point x="58.33333333333337" y="-80.0" />
+      <point x="735.2299242424243" y="903.0" />
+      <point x="683.6384215111486" y="903.0" />
+      <point x="0.0" y="24.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.DrawItemDrawer" target="jabberpoint.presentation.Line">
-      <point x="-127.5" y="-35.5" />
-      <point x="235.5" y="1173.0" />
-      <point x="305.5229670652602" y="1173.0" />
-      <point x="305.5229670652602" y="570.0" />
-      <point x="350.6896337319266" y="570.0" />
-      <point x="-11.625" y="68.5" />
+      <point x="127.5" y="-35.5" />
+      <point x="2504.688257575758" y="1193.0" />
+      <point x="2387.396590909091" y="1193.0" />
+      <point x="2387.396590909091" y="560.0" />
+      <point x="2342.229924242424" y="560.0" />
+      <point x="11.625" y="68.5" />
     </edge>
     <edge source="jabberpoint.view.drawer.SlideDrawer" target="jabberpoint.view.drawer.DrawerFactory">
-      <point x="92.33333333333326" y="46.5" />
-      <point x="1832.6333333333332" y="1390.0" />
-      <point x="1264.7193644717336" y="1390.0" />
-      <point x="67.125" y="-35.5" />
+      <point x="95.0" y="46.5" />
+      <point x="1175.6882575757577" y="1390.0" />
+      <point x="1552.289639419025" y="1390.0" />
+      <point x="-23.375" y="-35.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.48315412186379925" x="1538.0" y="565.7344213649852" />
-  <SelectedNodes>
-    <node>jabberpoint.presentation.style.StyleFactory</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="0.48315412186379925" x="1538.0" y="1997.7344213649853" />
+  <SelectedNodes />
   <Categories>
     <Category>Methods</Category>
     <Category>Properties</Category>

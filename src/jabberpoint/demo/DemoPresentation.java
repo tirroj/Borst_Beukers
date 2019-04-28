@@ -1,8 +1,9 @@
 package jabberpoint.demo;
 
 import jabberpoint.file.Accessor;
-import jabberpoint.presentation.*;
-import jabberpoint.presentation.slideitem.BitmapItem;
+import jabberpoint.presentation.Presentation;
+import jabberpoint.presentation.Slide;
+import jabberpoint.presentation.slideitem.ItemFactory;
 
 /** Een ingebouwde demo-presentatie
  *
@@ -46,7 +47,7 @@ public class DemoPresentation extends Accessor {
     slide.append(2, "gebruik File->Open uit het menu.");
     slide.append(1, " ");
     slide.append(1, "Dit is het einde van de presentatie.");
-    slide.append(new BitmapItem(1, "JabberPoint.jpg"));
+    slide.append(ItemFactory.getItem(ItemFactory.IMAGE, 1, "JabberPoint.jpg"));
     presentation.append(slide);
   }
 
